@@ -1,53 +1,261 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    </head>
-    <body>
-        <!-- Navigation bar -->
-        <div id="nav">
-            <div id="nav__logo"></div>
-            <div class="nav__links">
-                <a href=""></a> 
-                <a href=""></a>
-                <a href=""></a>   
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </div>
-            <div class="nav_social">
-                <a href="www.facebook.com"></a>
-                <a href="www.youtube.com"></a>
-            </div>
-            <div class="nav__menu"></div>
-        </div>
-            
-        <div id="categories">
-            <h2 class="text--orange">Popular Categories</h2>
-            <h1>Course Categories</h1>
-            <div class="categories__course">
-                <img src="" alt="Graphic Design (UI)">
-                <div class="categories__course__text">
-                    <h2>Graphic Design (UI)</h2>
-                    <div class="text--desc"></div>  <br>
-                    <div class="text--participans"></div>
-                    <div class="text--courses"></div>
-                </div>
-            </div>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Welcome to EduPlus" />
+    <meta name="keywords" content="online courses" />
+    <meta name="author" content="Marek Brodacký" />
+    <title>EduPlus Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+    <header class="COLOR-2">
+        <a href="#Home" class="logo">
+            <img class="logo__img" src="icons/EduLogo.png" alt="logo" />
+            <span class="logo__text">
+                <span class="logo-edu">Edu</span>Plus
+            </span>
+        </a>
+        <!-- before after ***-->
+        <nav>
+            <ul>
+                <a href="">
+                    <li>
+                        Home<span class="material-icons">expand_more</span>
+                    </li>
+                </a>
+
+                <a href="">
+                    <li>
+                        Courses<span class="material-icons">expand_more</span>
+                    </li>
+                </a>
+
+                <a href="">
+                    <li>
+                        Events<span class="material-icons">expand_more</span>
+                    </li>
+                </a>
+
+                <a href="">
+                    <li>
+                        Pages<span class="material-icons">expand_more</span>
+                    </li>
+                </a>
+
+                <a href="">
+                    <li>
+                        Blog<span class="material-icons">expand_more</span>
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        Contact<span class="material-icons">expand_more</span>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+        <div class="nav-buttons">
+            <a href="https://www.facebook.com/" class="social-button"><img class="social-button__img"
+                    src="icons/facebook_logo.png" alt="Facebook" /></a>
+            <a href="https://www.youtube.com/" class="social-button"><img class="social-button__img"
+                    src="icons/youtube_logo.png" alt="YouTube" /></a>
+            <a href="" class="sign-in-button"><span class="material-icons">perm_identity</span>SIGN IN</a>
+            <a href="" id="apps"><span class="material-icons">apps</span></a>
         </div>
 
-        <div class="available">
-            <div class="available__course">
+    </header>
+    <main>
+        <article class="COLOR-2">
+            <h1>■ ■ ■ Welcome to EduPlus</h1>
+            More than 1200 Online Courses
+            <div>
+                <input type="text" placeholder="Search Courses" />
+                <span class="material-icons">expand_more</span>
+                <button><span class="material-icons">search</span></button>
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                    placeat voluptas provident eos.
+                </p>
+
+                <address>
+                    <span class="material-icons">contact_phone</span>
+                    <span>ONLINE SUPPORT <a href="tel:">+012 (345) 6789</a></span>
+                </address>
+            </div>
+            <div>
                 <div>
-                    <div class="div--user--icon"></div>
-                    <div class="div--user--name">Warner</div>
-                    <div class="div--course--price">$59.95</div>
+                    <!-- menu_book school category-->
+                    <span class="material-icons">groups</span>
+
+                    <span>3045+</span>
+                    <span>Satisfied students</span>
                 </div>
-                <div class="available__course__tag"></div>
-                <div class="available__course__stars"></div>
             </div>
-            <button id="all"></button>
+        </article>
+        <!-- course categories-->
+        <article>
+            <hroup>
+                <h2>■ ■ ■ Popular Categories ■ ■ ■</h2>
+                <h3>Course Categories</h3>
+            </hroup>
+            <section>
+                <img src="" alt="" />
+                <h3>Graphic Design (UI)</h3>
+                <span>Web Design Course</span>
+                <ul>
+                    <li><span class="material-icons">groups</span>250</li>
+                    <li>
+                        <span class="material-icons">library_books</span>800+ Courses
+                    </li>
+                </ul>
+            </section>
+        </article>
+        <!-- available courses-->
+        <article>
+            <hroup>
+                <h2>Popular Categories</h2>
+                <!-- before after ***-->
+                <h3>Course Categories</h3>
+            </hroup>
+            <section>
+                <div>
+                    <img src="" alt="Teacher Picture" />
+                    <span>Warner</span>
+                    <span>$59.95</span>
+                </div>
+                <span>English</span>
+                <h3>Best Courses For Learning English Courses</h3>
+                <ul>
+                    <li><span class="material-icons">groups</span>250</li>
+                    <li><span class="material-icons">query_builder</span>36hr</li>
+                    <li><span class="material-icons">question_answer</span>2.5k</li>
+                </ul>
+            </section>
+            <a href="">View All Courses <span class="material-icons">east</span></a>
+        </article>
+        <!-- gallery -->
+        <!-- instructors -->
+        <!-- events -->
+        <!-- recom -->
+        <!-- become an instructor -->
+        <!-- news blog -->
+        <!-- companies -->
+        <div class="COLOR-1 companies">
+            <img src="icons/mountain_slogan_here.png" alt="Mountain Slogan Here" width="66" />
+            <img src="icons/paper_slogan_here.png" alt="Paper Slogan Here" width="66" />
+            <img src="icons/sumit_slogan_here.png" alt="Sumit Slogan Here" width="66" />
+            <img src="icons/circle_slogan_here.png" alt="Circle Slogan Here" width="66" />
+            <img src="icons/globe_slogan_here.png" alt="Globe Slogan Here" width="66" />
         </div>
+        <!-- footer -->
+    </main>
+    <footer class="COLOR-3">
+        <!-- logo -->
+        <a href="#Home" class="logo">
+            <img class="logo__img" src="icons/EduLogoWhite.png" alt="logo" width="66" />
+            <span class="logo__text">
+                <span class="logo-edu">Edu</span>Plus
+            </span>
+        </a>
+        <!-- socky -->
+        <div>
+            <a href="https://www.facebook.com/"><img src="icons/facebook_logo.png" alt="Facebook" width="66" /></a>
+            <a href="https://www.youtube.com/"><img src="icons/twitter_logo.png" alt="YouTube" width="66" /></a>
+            <a href="https://www.youtube.com/"><img src="icons/youtube_logo.png" alt="YouTube" width="66" /></a>
+            <a href="https://www.youtube.com/"><img src="icons/instagram_logo.png" alt="YouTube" width="66" /></a>
+        </div>
+        <!-- our courses -->
+        <div>
+            <h2>Our Categories</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Business Studies</li>
+                <li>Computer Engineering</li>
+                <li>English Learning</li>
+                <li>Graphic Design</li>
+                <li>Color Comoinitions</li>
+                <li>Software Development</li>
+                <li>Photography</li>
+                <li>Advance WordPress</li>
+                <li>Basic PSD to HTML</li>
+            </ul>
+        </div>
+        <!-- company -->
+        <div>
+            <h2>Company</h2>
+            <ul>
+                <li>About Eduket</li>
+                <li>Meet Advisors</li>
+                <li>Join A Career</li>
+                <li>Latest Courses</li>
+                <li>Newsletters</li>
+            </ul>
+        </div>
+        <!-- newsletters -->
+        <div>
+            <h2>Newsletters</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                placeat voluptas provident eos.
+            </p>
+            <div>
+                <input type="text" placeholder="Enter Your Email" />
+                <button><span class="material-icons">east</span></button>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <p>Copyright &copy; 2020 EduPlus All Rights Reserved.</p>
+    </footer>
+</body>
 
-
-    </body>
 </html>
+<!-- 
+   <div id="nav">
+       <div id="nav__logo"></div>
+       <div class="nav__links">
+           <a href=""></a> 
+           <a href=""></a>
+           <a href=""></a>   
+           <a href=""></a>
+           <a href=""></a>
+           <a href=""></a>
+       </div>
+       <div class="nav_social">
+           <a href="www.facebook.com"></a>
+           <a href="www.youtube.com"></a>
+       </div>
+       <div class="nav__menu"></div>
+   </div>
+       
+   <div id="categories">
+       <h2 class="text--orange">Popular Categories</h2>
+       <h1>Course Categories</h1>
+       <div class="categories__course">
+           <img src="" alt="Graphic Design (UI)">
+           <div class="categories__course__text">
+               <h2>Graphic Design (UI)</h2>
+               <div class="text--desc"></div>  <br>
+               <div class="text--participans"></div>
+               <div class="text--courses"></div>
+           </div>
+       </div>
+   </div>
+   
+   <div class="available">
+       <div class="available__course">
+           <div>
+               <div class="div--user--icon"></div>
+               <div class="div--user--name">Warner</div>
+               <div class="div--course--price">$59.95</div>
+           </div>
+           <div class="available__course__tag"></div>
+           <div class="available__course__stars"></div>
+       </div>
+       <button id="all"></button>
+   </div>-->
