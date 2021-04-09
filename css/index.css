@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6{
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
 
-  padding: 9rem 0 6rem;
+  padding: 5rem 0 4rem;
 }
 
 .main-grid__content{
@@ -122,7 +122,6 @@ h1, h2, h3, h4, h5, h6{
   text-align: center;
 }
 
-
 /* LOGO */
 .logo{
   display: flex;
@@ -145,6 +144,7 @@ h1, h2, h3, h4, h5, h6{
 .logo--footer{
   color: white;
 }
+
 /* HEADER */
 header{
   width: 100%;
@@ -223,6 +223,128 @@ nav .material-icons{
 #apps{
   color: var(--color-1);
 }
+/* welcome */
+.welcome{
+  background-image: url(../img/background.png); 
+  background-repeat: no-repeat;
+  background-position: right;
+  position: relative;
+}
+
+.girl-background{
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+h1{
+  font-size: 1rem;
+  color: var(--color-1);
+}
+
+.welcome-content-left{
+  width: 45%;
+}
+
+.welcome-content{
+  position: relative;
+}
+
+.welcome-content h2{
+  margin: 1rem 0;
+  font-size: 3rem;
+  width: 100%;
+  font-weight: bold;
+}
+
+.floating-bars{
+  position: absolute;
+  width: 100%;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.welcome-course-search{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.welcome-course-search input{
+  border: none;
+  font-weight: bold;
+  width: 70%;
+}
+
+.search-expand{
+  color:grey;
+  margin: 0 .5rem;
+}
+
+.welcome-course-search button{
+  color: white;
+  background-color: var(--color-1);
+  border: none;
+  height: 100%;
+  padding: .5rem;
+}
+
+.online-support{
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+  display: flex;
+  font-size: 0.75rem;
+}
+
+.online-support a{
+  color:black;
+}
+
+.online-support p{
+  width: 50%;
+  border-right: 2px solid var(--color-1);
+}
+
+.online-support address{
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.online-support-text{
+ color:grey;
+}
+
+.online-support .material-icons{
+  color:var(--color-1);
+  margin: 0.5rem;
+}
+
+.floating-bar{
+  z-index: 1;
+  display: flex;
+  color: var(--color-1);
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+}
+
+.floating-bar .material-icons{
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
+
+.floating-bar__number{
+  font-weight: bold;
+}
+
+.floating-bar__description{
+  color: grey;
+}
 
 /* expert instructors*/
 .expert-instructors__instructors{
@@ -245,7 +367,6 @@ nav .material-icons{
   height: 10rem;
 }
 
-
 .instructor__more-info{
   display: flex;
   align-items: center;
@@ -267,20 +388,24 @@ nav .material-icons{
 .instructor__description{
   padding: 1rem;
 }
+
 .instructor__name{
   font-weight: bold;
 }
+
 .instructor__type{
   font-size: 1rem;
   color: var(--color-4);
   padding-bottom: 1rem;
 }
+
 .instructor__courses{
   display: flex;
   padding-top: 1rem;
   border-top: 1px solid var(--color-4);
   font-size: 1rem;
 }
+
 .instructor__courses .material-icons{
   padding-right: 0.2rem;
   color:var(--color-1);
