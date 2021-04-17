@@ -11,6 +11,7 @@
 body {
   margin: 0;
   font-family: MYRIADPRO;
+  font-size: 100%;
 }
 
 :root{
@@ -20,6 +21,7 @@ body {
   --color-4: #b7b7b7;
   --color-5: #324d56;
   --color-6: #0d3541;
+  --color-7: #427b8e;
 }
 
 .COLOR-1 {
@@ -59,6 +61,22 @@ Prvek uvnitř bloku, který potřebujeme stylovat. Element nelze v rozhraní pou
 Modifikátor
 Varianta komponenty. Popisuje vizuální vlastnosti (.block--small), stav (.block--disabled) nebo chování (.block--animated-to-left). Neměla by nést název závislý na vzhledu (.block--green).
 .nazev-bloku--nazev-modifikatoru.
+
+Struktura
+---------
+pozicování{
+  width/height
+  position
+  flex/grid
+  margin
+  padding
+  border
+}
+vzhled{
+  font
+  barva
+}
+
 */
 /* Global */
 .tag{
@@ -70,7 +88,22 @@ Varianta komponenty. Popisuje vizuální vlastnosti (.block--small), stav (.bloc
   padding: 0.25rem 0.5rem;
   border-radius: 2rem;
 
-  background: royalblue;
+  background: blue;
+}
+
+.button-with-arrow{
+  width: max-content;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px 32px;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color:white;
 }
 
 /* Tagy */
@@ -89,7 +122,7 @@ h1, h2, h3, h4, h5, h6{
   font-weight: unset;
 }
 
-/* Grid */
+/* Grid a flex*/
 .main-grid {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -100,6 +133,10 @@ h1, h2, h3, h4, h5, h6{
 .main-grid__content{
   grid-column-start: 2;
   grid-column-end: 3;
+}
+
+.flex{
+  display: flex;
 }
 
 /* Texty a nadpisy */
@@ -123,11 +160,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* LOGO */
-.logo{
-  display: flex;
-  align-items: center;
-}
-
 .logo__img {
   width: 3rem;
 }
@@ -148,15 +180,25 @@ h1, h2, h3, h4, h5, h6{
 /* HEADER */
 header{
   width: 100%;
-  height: 10vh;
+  height: 7vh;
   display: flex;
-  
+  justify-content: space-between;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.nav-logo{
+  display: flex;
+  align-items: center;
+  margin: 0 3rem;
 }
 
 nav{
   display: flex;
   align-self: center;
   margin: 0 1rem;
+  font-weight: bold;
 }
 
 nav ul{
@@ -176,54 +218,59 @@ nav .material-icons{
   font-size: 0.75rem;
 }
 
-.nav-buttons{
+.header-socials{
   display: flex;
   align-items: center;
 }
 
-.nav-buttons:first-child{
-  background-color: var(--color-1);
-}
-
-.social-button{
+.header-socials__button{
   display: flex;
   align-items: center;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2rem;
+  height: 2rem;
 
-  margin: 1px;
-  background-color: white;
+  margin: 0.25rem;
+  background: white;
 }
 
-.social-button:first-child{
+.header-socials__button--signin{
+  padding: 0 0.5em;
+  width: auto;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: var(--color-3);
+}
+
+.header-socials__button--colored{
+  margin: 0;
   background-color: var(--color-1);
 }
 
-.social-button__img{
+.header-socials__button img{
   height: 0.8rem;
   margin: 0 auto;
   display: block;
 }
 
-.sign-in-button{
-  display: flex;
-  align-items: center;
-
-  background: white;
-  color: var(--color-3);
-
-  margin: 1px;
-  padding: 3px;
-}
-
-.sign-in-button .material-icons{
-  font-size: 0.75rem;
+.header-socials__button .material-icons{
+  font-size: 1rem;
+  color: var(--color-1);
 }
 
 #apps{
   color: var(--color-1);
+  margin: 0 2rem 0 1.5rem;
 }
-/* welcome */
+
+#apps .material-icons{
+  font-size: 2.5rem;
+}
+
+/* --------------- 
+  
+  welcome 
+  
+   ---------------*/
 .welcome{
   background-image: url(../img/background.png); 
   background-repeat: no-repeat;
@@ -247,6 +294,7 @@ h1{
 }
 
 .welcome-content{
+  margin-top: 9rem;
   position: relative;
 }
 
@@ -345,8 +393,203 @@ h1{
 .floating-bar__description{
   color: grey;
 }
+/* --------------- 
+  
+  course categories
+  
+   ---------------*/
+.course-categories{
+  background-color: white;
+}
 
-/* expert instructors*/
+.course-categories-courses{
+  width: 100%;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.course-category{
+  width: 100%;
+  border: 1px solid #b7b7b7;
+}
+
+.course-category__header{
+  font-weight: bold;
+}
+
+.course-category__description{
+  margin: 5px 0;
+
+  font-size: 1rem;
+  color: var(--color-4);
+}
+
+.course-category-content{
+  padding: 1.5rem;
+}
+
+.course-category-content .material-icons{
+  color: var(--color-1);
+  vertical-align: middle;
+}
+
+.course-category img{
+  width: 100%;
+  height: 150px;
+
+  background: grey;
+}
+
+.course-category-content ul{
+  display: flex;
+}
+
+.course-category-content__groups, .course-category-content__courses{
+  margin: 0 5px;
+  color: var(--color-4);
+}
+
+/* --------------- 
+  
+  available courses 
+  
+   ---------------*/
+
+.available-courses{
+  background-color: var(--color-3);
+  padding: 150px 0;
+}
+
+.available-courses .main-header{
+  color: white;
+}
+
+.available-courses__button {
+  border: 2px solid var(--color-5);
+  color: var(--color-7);
+}
+
+/*
+.available-courses__button *{
+  color:var(--color-7);
+}*/
+
+
+.available-courses-grid{
+  width: 100%;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin: 3rem 0;
+}
+
+.available-course{
+  width: 100%;
+  background: white;
+}
+
+.available-course__image-part{
+  position: relative;
+  width: 100%;
+  height: 14rem;
+}
+
+.a-c__image-part__bg-image{
+  width: 100%;
+  height: 100%;
+}
+
+.a-c__image-part__content{
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+.a-c__image-part__content__user{
+  display: flex;
+  align-items: center;
+}
+
+.a-c__image-part__content__user h3{
+  font-weight: bolder;
+  color: white;
+}
+
+.a-c__image-part__content__user img{
+  width: 2.5rem;
+  height: 2.5rem;
+
+  margin: 1rem;
+  border-radius: 100%;
+}
+
+.a-c__image-part__content__price{
+  margin: 1rem;
+  padding: .25rem .5rem;
+  border-radius: 3rem;
+
+  font-size: 0.75rem;
+  background: var(--color-1);
+  color: white;
+}
+/*-------------------------*/
+
+.available-course__content{
+  padding: 1.5rem;
+}
+
+.a-c__content__special{
+  display: flex;
+  align-items: center;
+}
+
+.a-c__content__special .stars{
+  display: flex;
+  margin-left: 1em;
+}
+
+.a-c__content__special .material-icons{
+  font-size: 1.2rem;
+  color: var(--color-1);
+}
+
+.a-c__content__heading{
+  margin: 1rem 0;
+  padding-bottom: 1em;
+  border-bottom: 1px solid grey;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-3);
+}
+
+.a-c__content_info{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  
+  color:grey;
+}
+
+.a-c__content_info .material-icons{
+  margin-right: .25em;
+
+  vertical-align: middle;
+  color: var(--color-1);
+}
+/* --------------- 
+  
+  expert instructors 
+  
+   ---------------*/
 .expert-instructors__instructors{
   width: 100%;
   display: grid;
@@ -364,7 +607,7 @@ h1{
 
 .instructor__image{
   width: 100%;
-  height: 10rem;
+  height: 12rem;
 }
 
 .instructor__more-info{
@@ -375,7 +618,7 @@ h1{
   height: 2rem;
   background-color: var(--color-1);
   position: absolute;
-  top: 9rem;
+  top: 11rem;
   right: 1rem;
 }
 
@@ -458,95 +701,170 @@ h1{
 .gallery-photos__image img{
   width: 100%;
 }
+/* --------------- 
+  
+    upcoming events
+  
+   ---------------*/
 
-/* available courses */
-.available-courses{
-  background-color: var(--color-3);
-  padding: 150px 0;
-}
+   .upcoming-events__flex{
+    width: 100%;
+    display: flex;
+    grid-gap: 2rem;
+    margin: 3rem 0;
+  }
 
-.available-courses .main-header{
-  color: white;
-}
+  .upcoming-event__container{
+    display: flex;
+    flex-flow: column;
+    grid-gap: 2rem;
+  }
 
-.available-courses-grid{
+  .upcoming-event__button {
+    border-radius: 1rem;
+    border: 2px solid grey;
+
+    color: var(--color-6);
+  }
+
+  .u-e__price{
+    position: absolute;
+    top: 8.5em;
+    right: 2em;
+    padding: .5rem;
+    border-radius: 100%;
+  
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: var(--color-1);
+    color: white;
+  }
+
+  .u-e__dates{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    color:grey;
+  }
+
+  .u-e__dates .material-icons{
+    color: var(--color-1);
+    vertical-align: middle;
+  }
+
+  .upcoming-event-big{
+    width: 100%;
+    position: relative;
+
+    background-color: var(--color-2);
+  }
+
+  .upcoming-event-big__content{
+    padding: 2.5rem;
+  }
+  
+  .upcoming-event-big img{
+    width: 100%;
+    height: 14em;
+  }
+  
+  .u-e-b__content__heading{
+    margin: 1rem 0;
+
+    font-weight: bold;
+    color: var(--color-5);
+  }
+
+  .u-e-b__content__paragraph{
+    color:grey;
+  }
+
+  .u-e-b__content__button-join{
+    margin:0;
+    border: none;
+    
+    background-color: var(--color-1);
+  }
+
+  .upcoming-event-small{
+
+  }
+
+  .upcoming-event-small img{
+    height: 3rem;
+  }
+
+
+/* --------------- 
+  
+    Student's feedback
+  
+   ---------------*/
+
+.students-feedback__flex{
   width: 100%;
+  position: relative;
   display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
   justify-items: center;
 }
 
-.available-course{
-  width: 100%;
-  border: 1px solid #b7b7b7;
-  background: white;
+.s-f__citate__autor img{
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 1rem;
+  border-radius: 100%;
 }
 
-.available-course-text{
-  padding: 1.5rem;
-}
 
-.available-course-text-header{
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: var(--color-3);
+/* --------------- 
+  
+    Instructor
+  
+   ---------------*/
 
-  margin: 1rem 0;
-}
-/* course categories */
-.course-categories{
-  background-color: white;
-}
 
-.course-categories-courses{
-  width: 100%;
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-}
 
-.course-category{
-  width: 100%;
-  border: 1px solid #b7b7b7;
-}
 
-.course-category__header{
-  font-weight: bold;
-}
 
-.course-category__description{
-  margin: 5px 0;
 
-  font-size: 1rem;
-  color: var(--color-4);
-}
 
-.course-category-content{
-  padding: 1.5rem;
-}
 
-.course-category-content .material-icons{
-  color: var(--color-1);
-  vertical-align: middle;
-}
 
-.course-category img{
-  width: 100%;
-  height: 150px;
 
-  background: grey;
-}
 
-.course-category-content ul{
-  display: flex;
-}
 
-.course-category-content__groups, .course-category-content__courses{
-  margin: 0 5px;
-  color: var(--color-4);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Companies */
 

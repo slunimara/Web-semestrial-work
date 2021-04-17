@@ -12,62 +12,65 @@
 </head>
 
 <body>
-    <header class="COLOR-2">
-        <a href="#Home" class="logo">
-            <img class="logo__img" src="icons/EduLogo.png" alt="logo" />
-            <span class="logo__text">
-                <span class="logo-edu">Edu</span>Plus
-            </span>
-        </a>
-        <!-- before after ***-->
-        <nav>
-            <ul>
-                <a href="">
-                    <li>
-                        Home<span class="material-icons">expand_more</span>
-                    </li>
-                </a>
+    <header>
+        <div class="flex">
+            <a href="#Home" class="nav-logo">
+                <img class="logo__img" src="icons/EduLogo.png" alt="logo" />
+                <span class="logo__text">
+                    <span class="logo-edu">Edu</span>Plus
+                </span>
+            </a>
+            <nav>
+                <ul>
+                    <a href="">
+                        <li>
+                            Home<span class="material-icons">expand_more</span>
+                        </li>
+                    </a>
 
-                <a href="">
-                    <li>
-                        Courses<span class="material-icons">expand_more</span>
-                    </li>
-                </a>
+                    <a href="">
+                        <li>
+                            Courses<span class="material-icons">expand_more</span>
+                        </li>
+                    </a>
 
-                <a href="">
-                    <li>
-                        Events<span class="material-icons">expand_more</span>
-                    </li>
-                </a>
+                    <a href="">
+                        <li>
+                            Events<span class="material-icons">expand_more</span>
+                        </li>
+                    </a>
 
-                <a href="">
-                    <li>
-                        Pages<span class="material-icons">expand_more</span>
-                    </li>
-                </a>
+                    <a href="">
+                        <li>
+                            Pages<span class="material-icons">expand_more</span>
+                        </li>
+                    </a>
 
-                <a href="">
-                    <li>
-                        Blog<span class="material-icons">expand_more</span>
-                    </li>
-                </a>
-                <a href="">
-                    <li>
-                        Contact<span class="material-icons">expand_more</span>
-                    </li>
-                </a>
-            </ul>
-        </nav>
-        <div class="nav-buttons">
-            <a href="https://www.facebook.com/" class="social-button"><img class="social-button__img"
-                    src="icons/facebook_logo.png" alt="Facebook" /></a>
-            <a href="https://www.youtube.com/" class="social-button"><img class="social-button__img"
+                    <a href="">
+                        <li>
+                            Blog<span class="material-icons">expand_more</span>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            Contact
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-socials">
+            <a href="https://www.facebook.com/" class="header-socials__button header-socials__button--colored"><img
+                    class="social-button__img" src="icons/facebook_logo.png" alt="Facebook" /></a>
+            <a href="https://www.youtube.com/" class="header-socials__button"><img class="social-button__img"
                     src="icons/youtube_logo.png" alt="YouTube" /></a>
-            <a href="" class="sign-in-button"><span class="material-icons">perm_identity</span>SIGN IN</a>
+            <a href="" class="header-socials__button header-socials__button--signin"><span
+                    class="material-icons">perm_identity</span>SIGN IN</a>
             <a href="" id="apps"><span class="material-icons">apps</span></a>
         </div>
 
     </header>
+
     <main>
         <article class="COLOR-2 main-grid welcome">
             <div class="main-grid__content welcome-content">
@@ -285,24 +288,98 @@
                 <div class="available-courses-grid">
                     <section class="available-course">
                         <div class="available-course__image-part">
-                            <img src="" alt="Teacher Picture" />
-                            <h3>Warner</h3>
-                            <h3>$59.95</h3>
+                            <img class="a-c__image-part__bg-image" src="img/fill.jpg" alt="Teacher Picture" />
+                            <div class="a-c__image-part__content">
+                                <div class="a-c__image-part__content__user">
+                                    <img src="img/teacher.jpg" alt="">
+                                    <h3>Warner</h3>
+                                </div>
+                                <h3 class="a-c__image-part__content__price">$59.95</h3>
+                            </div>
                         </div>
-                        <div class="available-course-text">
-                            <h3 class="tag">ENGLISH</h3>
-                            <h3 class="available-course-text-header">Best Courses For Learning English Courses</h3>
-                            <ul>
-                                <li><span class="material-icons">groups</span>250</li>
+                        <div class="available-course__content">
+                            <div class="a-c__content__special">
+                                <h3 class="tag">ENGLISH</h3>
+                                <div class="stars">
+                                    <span class="material-icons">star</span>
+                                    <span class="material-icons">star</span>
+                                    <span class="material-icons">star</span>
+                                    <span class="material-icons">star</span>
+                                    <span class="material-icons">star_half</span>
+                                </div>
+                            </div>
+                            <h3 class="a-c__content__heading">Best Courses For Learning English Courses</h3>
+                            <ul class="a-c__content_info">
+                                <li><span class="material-icons">groups</span>25</li>
                                 <li><span class="material-icons">query_builder</span>36hr</li>
                                 <li><span class="material-icons">question_answer</span>2.5k</li>
                             </ul>
                         </div>
                     </section>
-                    <div></div>
-                    <div></div>
+                    <section class="available-course">
+                        <div class="available-course__image-part">
+                            <img class="a-c__image-part__bg-image" src="img/fill.jpg" alt="Teacher Picture" />
+                            <div class="a-c__image-part__content">
+                                <div class="a-c__image-part__content__user">
+                                    <img src="img/teacher.jpg" alt="">
+                                    <h3>Warner</h3>
+                                </div>
+                                <h3 class="a-c__image-part__content__price">$59.95</h3>
+                            </div>
+                        </div>
+                        <div class="available-course__content">
+                            <div class="a-c__content__special">
+                                <h3 class="tag">ENGLISH</h3>
+                                <div class="stars">
+                                    <span class="material-icons">star</span>
+                                    <span class="material-icons">star</span>
+                                    <span class="material-icons">star</span>
+                                    <span class="material-icons">star</span>
+                                    <span class="material-icons">star_half</span>
+                                </div>
+                            </div>
+                            <h3 class="a-c__content__heading">Best Courses For Learning English Courses</h3>
+                            <ul class="a-c__content_info">
+                                <li><span class="material-icons">groups</span>25</li>
+                                <li><span class="material-icons">query_builder</span>36hr</li>
+                                <li><span class="material-icons">question_answer</span>2.5k</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="available-course">
+                        <div class="available-course__image-part">
+                            <img class="a-c__image-part__bg-image" src="img/fill.jpg" alt="Teacher Picture" />
+                            <div class="a-c__image-part__content">
+                                <div class="a-c__image-part__content__user">
+                                    <img src="img/teacher.jpg" alt="">
+                                    <h3>Warner</h3>
+                                </div>
+                                <h3 class="a-c__image-part__content__price">$59.95</h3>
+                            </div>
+                        </div>
+                        <div class="available-course__content">
+                            <div class="a-c__content__special">
+                                <h3 class="tag">ENGLISH</h3>
+                                <div class="stars">
+                                    <span class="material-icons">star</span>
+                                    <span class="material-icons">star</span>
+                                    <span class="material-icons">star</span>
+                                    <span class="material-icons">star</span>
+                                    <span class="material-icons">star_half</span>
+                                </div>
+                            </div>
+                            <h3 class="a-c__content__heading">Best Courses For Learning English Courses</h3>
+                            <ul class="a-c__content_info">
+                                <li><span class="material-icons">groups</span>25</li>
+                                <li><span class="material-icons">query_builder</span>36hr</li>
+                                <li><span class="material-icons">question_answer</span>2.5k</li>
+                            </ul>
+                        </div>
+                    </section>
                 </div>
-                <a href="">View All Courses <span class="material-icons">east</span></a>
+
+                <a class="button-with-arrow available-courses__button" href=""><span>View All Courses</span><span
+                        class="material-icons">east</span></a>
             </div>
         </article>
 
@@ -312,7 +389,7 @@
                 <hroup>
                     <div class="main-hgroup">
                         <h2 class="sub-header">■ ■ ■ Photo & Album ■ ■ ■</h2>
-                        <h2 class="main-header"><strong>Available Courses</strong></h2>
+                        <h2 class="main-header"><strong>Campus Gallery</strong></h2>
                     </div>
                 </hroup>
 
@@ -424,9 +501,186 @@
         </article>
 
         <!-- events -->
+        <article class="upcoming-events main-grid">
+            <div class="main-grid__content">
+                <hroup>
+                    <div class="main-hgroup">
+                        <h2 class="sub-header">■ ■ ■ Latest Events ■ ■ ■</h2>
+                        <h2 class="main-header"><strong>Upcoming Events</strong></h2>
+                    </div>
+                </hroup>
+
+                <div class="upcoming-events__flex">
+                    <section class="upcoming-event-big">
+                        <img src="img/fill.jpg" alt="upcoming event picture">
+                        <div class="u-e__price">$20</div>
+                        <div class="upcoming-event-big__content">
+                            <ul class="u-e__dates">
+                                <li><span class="material-icons">date_range</span>25 nov 2020</li>
+                                <li><span class="material-icons">schedule</span>08 AM - 09 PM</li>
+                                <li><span class="material-icons">place</span>Paris, France</li>
+                            </ul>
+                            <h3 class="u-e-b__content__heading">Web Design & Development Conference 2020</h3>
+                            <p class="u-e-b__content__paragraph">Duis viverra diam non justo. Integer tempor. Nunc
+                                dapibus tortor
+                                vel
+                                mi dapibus sollicitudin. Fusce suscipit libero eget elit. Pellentesque habitant morbi
+                                tristique.</p>
+                            <button class="button-with-arrow u-e-b__content__button-join">
+                                join event
+                                <span class="material-icons">east</span>
+                            </button>
+                        </div>
+                    </section>
+                    <div class="upcoming-event__container">
+                        <section class="upcoming-event-small">
+                            <img src="img/fill.jpg" alt="upcoming event picture">
+                            <div class="u-e__price">$20</div>
+                            <div class="upcoming-event-small__content">
+                                <ul class="u-e__dates">
+                                    <li><span class="material-icons">date_range</span>25 nov 2020</li>
+                                    <li><span class="material-icons">schedule</span>08 AM - 09 PM</li>
+                                </ul>
+                                <h3 class="u-e-s__content__heading">Annual Conference 2020</h3>
+                                <button class="button-with-arrow u-e-s__content__button-join">
+                                    join event
+                                    <span class="material-icons">east</span>
+                                </button>
+                            </div>
+                        </section>
+                        <section class="upcoming-event-small">
+                            <img src="img/fill.jpg" alt="upcoming event picture">
+                            <div class="u-e__price">$20</div>
+                            <ul class="u-e__dates">
+                                <li><span class="material-icons">date_range</span>25 nov 2020</li>
+                                <li><span class="material-icons">schedule</span>08 AM - 09 PM</li>
+                            </ul>
+                            <h3 class="u-e-s__heading">Annual Conference 2020</h3>
+                            <button class="button-with-arrow u-e-s__button-join">
+                                join event
+                                <span class="material-icons">east</span>
+                            </button>
+                        </section>
+                    </div>
+                </div>
+
+                <a class="button-with-arrow upcoming-event__button" href="">
+                    <span>View All Events</span>
+                    <span class="material-icons">east</span>
+                </a>
+            </div>
+        </article>
+
         <!-- recom -->
+        <article class="students-feedback main-grid">
+            <div class="main-grid__content">
+                <hroup>
+                    <div class="main-hgroup">
+                        <h2 class="sub-header">■ ■ ■ Students Feedback ■ ■ ■</h2>
+                        <h2 class="main-header"><strong>What Our Students Say</strong></h2>
+                    </div>
+                </hroup>
+
+                <div class="students-feedback__flex">
+                    <div class="students-feedback__citate">
+                        <p class="s-f__citate__main-text">Praesent vitae arcu tempor neque lacinia pretium. Nullam
+                            faucibus mi quis velit. Cum sociis natoque penatibus et magnis dis parturient montes,
+                            nascetur ridiculus mus. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                            officia deserunt mollit anim id est laborum.</p>
+                        <p class="s-f__citate__main-description">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit. In enim a arcu imperdiet malesuada. Fusce consectetuer risus a nunc.</p>
+                        <div class="s-f__citate__autor">
+                            <img src="img/teacher.jpg" alt="Autor's photo">
+                            <div>
+                                <h3 class="s-f__citate__autor__name">Sousa Fernandes</h3>
+                                <h3 class="s-f__citate__autor__description">CEO & Founder</h3>
+                            </div>
+                        </div>
+                        <button class="button-with-arrow s-f__citate__button">
+                            <span class="material-icons">west</span>
+                        </button>
+                        <button class="button-with-arrow s-f__citate__button s-f__citate__button--active">
+                            <span class="material-icons">east</span>
+                        </button>
+                        <span class="material-icons">format_quote</span>
+                    </div>
+                    <img src="" alt="Photos of students">
+                </div>
+            </div>
+        </article>
+
         <!-- become an instructor -->
+        <article class="become_instructor main-grid COLOR-2">
+            <div class="main-grid__content">
+                <div class="become_instructor__flex">
+                    <div class="become_instructor__image-box">
+                        <img class="become_instructor__image" src="" alt="Instructor image male">
+                        <img class="become_instructor__image-2" src="" alt="Instructor image female">
+                    </div>
+                    <section class="become_instructor__section">
+                        <hroup>
+                            <div class="main-hgroup">
+                                <h2 class="sub-header">■ ■ ■ Build A Career</h2>
+                                <h2 class="main-header"><strong>Become an instructor</strong></h2>
+                            </div>
+                        </hroup>
+                        <p class="b-i__description">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit. In enim a arcu imperdiet malesuada. Fusce consectetuer risus a nunc.</p>
+                        <div class="b-i__tip-box">
+                            <div class="b-i__tip-box__tip">
+                                <span class="material-icons">Devices</span>
+                                <h3>Digitalization</h3>
+                                <p>In enim a arcu imperdiet malesuada. Fusce consectetuer risus a nunc.</p>
+                            </div>
+                            <div class="b-i__tip-box__tip">
+                                <span class="material-icons">menu_book</span>
+                                <h3>Book Friendly</h3>
+                                <p>In enim a arcu imperdiet malesuada. Fusce consectetuer risus a nunc.</p>
+                            </div>
+                        </div>
+                        <div class="b-i__button-box">
+                            <button class="button-with-arrow b-i__button">
+                                join with us
+                                <span class="material-icons">east</span>
+                            </button>
+                            <button class="b-i__button">
+                                Become a partner
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </article>
+
         <!-- news blog -->
+        <article class="news-blog main-grid">
+            <div class="main-grid__content">
+                <hroup>
+                    <div class="main-hgroup">
+                        <h2 class="sub-header">■ ■ ■ Articles & Tips ■ ■ ■</h2>
+                        <h2 class="main-header"><strong>Lastest News & Blog</strong></h2>
+                    </div>
+                </hroup>
+
+                <div class="news-blog__flex">
+                    <section class="news-blog__news">
+                        <img class="n-b__news__main-image" src="" alt="Gilr with book">
+                        <ul class="n-b__news__dates">
+                            <li><span class="material-icons">date_range</span>25 nov 2020</li>
+                            <li><span class="material-icons">question_answer</span>(30)</li>
+                        </ul>
+                        <h3 class="n-b__news__heading">Learning Resources in Challenging Times Online Workshop</h3>
+                        <div class="n-b__news__user">
+                            <img src="n-b__news__user__photo" alt="Autor's image">
+                            <h4 class="n-b__news__user__name">David Simala</h4>
+                        </div>
+                        <button class="n-b__news__button"></button>
+                    </section>
+                </div>
+            </div>
+        </article>
+
+
         <!-- companies -->
         <div class="COLOR-1 companies main-grid">
             <div class="main-grid__content companies__list">
@@ -444,7 +698,7 @@
         <div class="main-grid__content">
             <div class="footer-top-part">
                 <!-- logo -->
-                <a href="#Home" class="logo">
+                <a href="#Home" class="nav-logo">
                     <img class="logo__img" src="icons/EduLogoWhite.png" alt="logo" />
                     <span class="logo__text">
                         <span class="logo-edu">Edu</span>Plus
