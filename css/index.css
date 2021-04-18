@@ -12,6 +12,7 @@ body {
   margin: 0;
   font-family: MYRIADPRO;
   font-size: 100%;
+  color: var(--color-3);
 }
 
 :root{
@@ -91,12 +92,13 @@ vzhled{
   background: blue;
 }
 
-.button-with-arrow{
+.main-button{
   width: max-content;
   display: flex;
   align-items: center;
   margin: 0 auto;
   padding: 15px 32px;
+  border:none;
 
   text-align: center;
   text-decoration: none;
@@ -141,7 +143,7 @@ h1, h2, h3, h4, h5, h6{
 
 /* Texty a nadpisy */
 .main-hgroup{
-  margin: 0 0 2rem 0;
+  margin: 0 0 4rem 0;
 }
 
 .sub-header{
@@ -842,7 +844,7 @@ h1{
   background-size: cover;
 }
 
-.students-feedback .main-header, .sub-header{
+.students-feedback .main-header, .students-feedback .sub-header{
   color: white;
 }
 
@@ -970,10 +972,10 @@ h1{
   position: absolute;
 }
 .become_instructor__image-2{
-width: 50%;
-position: absolute;
-right: 2em;
-bottom: 2em;
+  width: 50%;
+  position: absolute;
+  right: 2em;
+  bottom: 0em;
 }
 .become_instructor__section .main-header{
   text-align: left;
@@ -1026,8 +1028,76 @@ bottom: 2em;
   background: #fff;
 }
 
+/* --------------- 
+  
+    News Blog
+  
+   ---------------*/
+.news-blog__flex{
+  width: 100%;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.news-blog__news{
+  position: relative;
+}
+.n-b__news__main-image{
+  width: 100%;
+}
+.n-b__news__content{
+  padding: 1.5rem;
+  border: 2px solid;
+  border-top: 0;
+  border-color: var(--color-4);
+}
+.n-b__news__dates{
+  width: 85%;
+    display: flex;
+    justify-content: space-between;
+    color: #808080;
+}
+.n-b__news__dates .material-icons{
+  color: var(--color-1);
+    vertical-align: middle;
+}
+.n-b__news__heading{
+  font-weight: bold;
+  margin: .5em 0;
+}
+.n-b__news__user{
+  display: flex;
+    align-items: center;
+}
+.n-b__news__user__photo{
+  width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    border-radius: 100%;
+}
+.n-b__news__user__name{
+  font-weight: bold;
+  color: var(--color-1);
+}
+.n-b__news__button{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: .5rem;
+  border: 0;
+  background: var(--color-6);
+}
+.n-b__news__button--colored{
+  background: var(--color-1);
+}
 
-/* Companies */
+/* --------------- 
+  
+    Companies
+  
+   ---------------*/
 
 .companies{
   padding: 3rem 0;
@@ -1060,8 +1130,7 @@ bottom: 2em;
   grid-template-columns: 2fr 4fr;
   align-items: center;
 
-  border-bottom: 1px solid var(--color-4);
-  margin-bottom: 3rem; 
+  border-bottom: 1px solid var(--color-5);
 }
 
 .footer-top-part .logo__text{
@@ -1088,13 +1157,24 @@ bottom: 2em;
 
 .footer-bottom-part{
   width: 100%;
+  position: relative;
   display: grid;
-  grid-gap: 0;
+  grid-gap: 4rem;
   grid-template-columns: 2fr 1fr 3fr;
+  margin: 3rem 0; 
 }
 .footer-categories{
   color: white;
   width: 100%;
+}
+.footer-categories ul{
+  display: flex;
+  width: max-content;
+}
+.footer-categories div{
+  display: grid;
+  margin-right: 1rem;
+  
 }
 .footer-categories h2{
   margin-bottom: 1rem;
@@ -1107,12 +1187,52 @@ bottom: 2em;
 .footer-company{
   color: white;
 }
+.footer-company ul{
+  display: flex;
+
+}
+.footer-company div{
+  display: grid;
+}
 .footer-company h2{
   margin-bottom: 1rem;
 }
 .footer-company ul li{
   margin: 0.4rem 0;
   color:var(--color-4)
+}
+
+.footer-newsletters h2{
+  color: white;
+}
+.footer-newsletters p{
+  color:var(--color-4)
+}
+.footer-newsletters div{
+ display:flex;
+}
+.footer-newsletters input{
+  display: block;
+    border: none;
+    font-weight: bold;
+    width: inherit;
+    padding: 1rem;
+    background: var(--color-6);
+}
+.footer-newsletters button{
+  margin: 0;
+  padding: 1rem;
+  border: 0;
+  background: var(--color-1);
+}
+
+.nav-to-top{
+  position: absolute;
+  right: -8rem;
+  margin: 0;  
+  padding: 1rem;
+  border: 0;
+  background: royalblue;
 }
 
 .footer-copyright{
