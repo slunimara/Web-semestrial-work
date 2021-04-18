@@ -510,7 +510,7 @@
                     </div>
                 </hroup>
 
-                <div class="upcoming-events__flex">
+                <div class="upcoming-events__grid">
                     <section class="upcoming-event-big">
                         <img src="img/fill.jpg" alt="upcoming event picture">
                         <div class="u-e__price">$20</div>
@@ -551,15 +551,17 @@
                         <section class="upcoming-event-small">
                             <img src="img/fill.jpg" alt="upcoming event picture">
                             <div class="u-e__price">$20</div>
-                            <ul class="u-e__dates">
-                                <li><span class="material-icons">date_range</span>25 nov 2020</li>
-                                <li><span class="material-icons">schedule</span>08 AM - 09 PM</li>
-                            </ul>
-                            <h3 class="u-e-s__heading">Annual Conference 2020</h3>
-                            <button class="button-with-arrow u-e-s__button-join">
-                                join event
-                                <span class="material-icons">east</span>
-                            </button>
+                            <div class="upcoming-event-small__content">
+                                <ul class="u-e__dates">
+                                    <li><span class="material-icons">date_range</span>25 nov 2020</li>
+                                    <li><span class="material-icons">schedule</span>08 AM - 09 PM</li>
+                                </ul>
+                                <h3 class="u-e-s__content__heading">Annual Conference 2020</h3>
+                                <button class="button-with-arrow u-e-s__content__button-join">
+                                    join event
+                                    <span class="material-icons">east</span>
+                                </button>
+                            </div>
                         </section>
                     </div>
                 </div>
@@ -583,28 +585,36 @@
 
                 <div class="students-feedback__flex">
                     <div class="students-feedback__citate">
-                        <p class="s-f__citate__main-text">Praesent vitae arcu tempor neque lacinia pretium. Nullam
-                            faucibus mi quis velit. Cum sociis natoque penatibus et magnis dis parturient montes,
-                            nascetur ridiculus mus. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                            officia deserunt mollit anim id est laborum.</p>
-                        <p class="s-f__citate__main-description">Lorem ipsum dolor sit amet, consectetuer adipiscing
-                            elit. In enim a arcu imperdiet malesuada. Fusce consectetuer risus a nunc.</p>
-                        <div class="s-f__citate__autor">
-                            <img src="img/teacher.jpg" alt="Autor's photo">
-                            <div>
-                                <h3 class="s-f__citate__autor__name">Sousa Fernandes</h3>
-                                <h3 class="s-f__citate__autor__description">CEO & Founder</h3>
+                        <div class="s-f__citate__box-copy"></div>
+                        <div class="s-f__citate__box-move">
+                            <p class="s-f__citate__main-text">Praesent vitae arcu tempor neque lacinia pretium. Nullam
+                                faucibus mi quis velit. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                qui
+                                officia deserunt mollit anim id est laborum.</p>
+                            <p class="s-f__citate__main-description">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                elit. In enim a arcu imperdiet malesuada. Fusce consectetuer risus a nunc.</p>
+                            <div class="s-f__citate__autor">
+                                <img src="img/teacher.jpg" alt="Autor's photo">
+                                <div>
+                                    <h3 class="s-f__citate__autor__name">Sousa Fernandes</h3>
+                                    <h3 class="s-f__citate__autor__description">CEO & Founder</h3>
+                                </div>
                             </div>
+                            <div class="s-f__citate__buttons">
+                                <button class="button-with-arrow s-f__citate__button">
+                                    <span class="material-icons">west</span>
+                                </button>
+                                <button class="button-with-arrow s-f__citate__button s-f__citate__button--active">
+                                    <span class="material-icons">east</span>
+                                </button>
+                            </div>
+                            <img src="img/quote.png" alt="quote" class="s-f__citate__quote-icon">
                         </div>
-                        <button class="button-with-arrow s-f__citate__button">
-                            <span class="material-icons">west</span>
-                        </button>
-                        <button class="button-with-arrow s-f__citate__button s-f__citate__button--active">
-                            <span class="material-icons">east</span>
-                        </button>
-                        <span class="material-icons">format_quote</span>
                     </div>
-                    <img src="" alt="Photos of students">
+                    <div class="students-feedback__pictures">
+                        <img src="img/student-pictures.png" alt="Photos of students">
+                    </div>
                 </div>
             </div>
         </article>
@@ -614,8 +624,8 @@
             <div class="main-grid__content">
                 <div class="become_instructor__flex">
                     <div class="become_instructor__image-box">
-                        <img class="become_instructor__image" src="" alt="Instructor image male">
-                        <img class="become_instructor__image-2" src="" alt="Instructor image female">
+                        <img class="become_instructor__image" src="img/teachers-meeting.jpg" alt="Group of instructors">
+                        <img class="become_instructor__image-2" src="img/instructor-woman.jpg" alt="Instructor female">
                     </div>
                     <section class="become_instructor__section">
                         <hroup>
@@ -628,22 +638,22 @@
                             elit. In enim a arcu imperdiet malesuada. Fusce consectetuer risus a nunc.</p>
                         <div class="b-i__tip-box">
                             <div class="b-i__tip-box__tip">
-                                <span class="material-icons">Devices</span>
+                                <span class="material-icons">devices</span>
                                 <h3>Digitalization</h3>
-                                <p>In enim a arcu imperdiet malesuada. Fusce consectetuer risus a nunc.</p>
+                                <p>In enim a arcu imperdiet malesuada.</p>
                             </div>
                             <div class="b-i__tip-box__tip">
                                 <span class="material-icons">menu_book</span>
                                 <h3>Book Friendly</h3>
-                                <p>In enim a arcu imperdiet malesuada. Fusce consectetuer risus a nunc.</p>
+                                <p>In enim a arcu imperdiet malesuada.</p>
                             </div>
                         </div>
                         <div class="b-i__button-box">
-                            <button class="button-with-arrow b-i__button">
+                            <button class="button-with-arrow b-i__button-1">
                                 join with us
                                 <span class="material-icons">east</span>
                             </button>
-                            <button class="b-i__button">
+                            <button class="button-with-arrow b-i__button-2">
                                 Become a partner
                             </button>
                         </div>
