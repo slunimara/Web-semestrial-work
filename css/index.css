@@ -1,19 +1,4 @@
-@font-face {
-  font-family: MYRIADPRO;
-  src: url(MYRIADPRO-REGULAR.otf);
-}
-@font-face {
-  font-family: MYRIADPRO;
-  font-weight: bold;
-  src: url(MYRIADPRO-BOLD.otf);
-}
-
-body {
-  margin: 0;
-  font-family: MYRIADPRO;
-  font-size: 100%;
-  color: var(--color-3);
-}
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500;700&family=Roboto:wght@300&display=swap');
 
 :root{
   --color-1: #ea5822;
@@ -24,6 +9,8 @@ body {
   --color-6: #0d3541;
   --color-7: #427b8e;
 }
+
+
 
 .COLOR-1 {
   background-color: #ea5822;
@@ -109,6 +96,17 @@ vzhled{
 }
 
 /* Tagy */
+body {
+  margin: 0;
+  font-family: 'Hind', sans-serif;
+  font-size: 100%;
+  color: var(--color-3);
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+}
+
 a{
   text-decoration: none;
 }
@@ -163,16 +161,16 @@ h1, h2, h3, h4, h5, h6{
 
 /* LOGO */
 .logo__img {
-  width: 3rem;
+  width: 4rem;
 }
 
 .logo__text{
-  font-family: MYRIADPRO;
+  font-size: 3rem;
   color:  #062a35;
 }
 
 .logo-edu{
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .logo--footer{
@@ -185,21 +183,20 @@ header{
   height: 7vh;
   display: flex;
   justify-content: space-between;
-
   position: absolute;
   z-index: 1;
+  padding-top: 1rem;
 }
 
 .nav-logo{
   display: flex;
-  align-items: center;
   margin: 0 3rem;
 }
 
 nav{
   display: flex;
   align-self: center;
-  margin: 0 1rem;
+  margin: 0 3rem;
   font-weight: bold;
 }
 
@@ -210,14 +207,15 @@ nav ul{
 nav li{
   display: flex;
   align-items: center;
-  padding: 0.5rem;
-
-  font-size: 0.75rem;
+  padding: 1rem;
+  font-size: 1rem;
   color:  #062a35;
 }
 
 nav .material-icons{
+  margin-left: 0.25rem;
   font-size: 0.75rem;
+  font-weight: bold;
 }
 
 .header-socials{
@@ -228,19 +226,19 @@ nav .material-icons{
 .header-socials__button{
   display: flex;
   align-items: center;
-  width: 2rem;
-  height: 2rem;
-
-  margin: 0.25rem;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 0.5rem;
   background: white;
 }
 
 .header-socials__button--signin{
-  padding: 0 0.5em;
+  padding: 0 0.75em;
   width: auto;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--color-3);
+  margin: 0;
 }
 
 .header-socials__button--colored{
@@ -248,24 +246,27 @@ nav .material-icons{
   background-color: var(--color-1);
 }
 
-.header-socials__button img{
-  height: 0.8rem;
+.header-socials__button img {
+  height: 1rem;
   margin: 0 auto;
   display: block;
 }
 
 .header-socials__button .material-icons{
   font-size: 1rem;
+  font-weight: bold;
   color: var(--color-1);
+  margin-right: 0.25rem;
 }
 
-#apps{
-  color: var(--color-1);
-  margin: 0 2rem 0 1.5rem;
+.header-socials__apps{
+  height: 3rem;
+  width: 3rem;
+  margin: 0 4rem 0 2.5rem;
 }
 
-#apps .material-icons{
-  font-size: 2.5rem;
+.header-socials__apps__img{
+  height: 100%;
 }
 
 /* --------------- 
