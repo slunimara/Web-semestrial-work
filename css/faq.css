@@ -1,0 +1,102 @@
+:root{
+  --color-1: #ea5822;
+  --color-2: #eaf4f7;
+  --color-3: #062a35;
+  --color-4: #b7b7b7;
+  --color-5: #324d56;
+  --color-6: #0d3541;
+  --color-7: #427b8e;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+
+  padding: 6rem 0;
+}
+
+.main-grid > * {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+/* --------------- 
+  
+  Header
+  
+   ---------------*/
+
+header {
+  position: unset;
+  padding: 1rem 0;
+  background: var(--color-2);
+}
+
+.nav-flex{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+/* --------------- 
+  
+  Page title 
+  
+   ---------------*/
+
+.page-title{
+
+}
+
+.page-title__image{
+
+}
+
+.page-title hgroup{
+
+}
+
+.page-title__header{
+
+}
+
+.page-title__location{
+
+}
+
+/* --------------- 
+  
+  Page title 
+  
+   ---------------*/
+
+/* --------------- 
+  
+  Become section
+  
+   ---------------*/
+
+  .sub-header::before {
+    content: "■ ■ ■ ";
+  }
+
+/* --------------- 
+  
+  Companies
+  
+   ---------------*/
+
+.companies{
+  padding: 3rem 0;
+  background:var(--color-1);
+}
+
+.companies__list{
+  width: 100%;
+  display: grid;
+  grid-gap: 6rem 0;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+}
