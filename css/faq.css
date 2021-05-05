@@ -34,35 +34,6 @@ header {
   width: 100%;
 }
 
-
-/* --------------- 
-  
-  Page title 
-  
-   ---------------*/
-
-.page-title{
-  height: 20rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-
-  background-image: url("../img/students_smiling.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.page-title__header{
-  font-size: 4rem;
-  color: #fff;
-}
-
-.page-title__location{
-  font-size: 1.5rem;
-  color: #fff;
-}
-
 /* --------------- 
   
   FAQ Content
