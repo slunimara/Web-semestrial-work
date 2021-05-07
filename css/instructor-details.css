@@ -29,25 +29,6 @@
 
 /* --------------- 
 
-Header
-
----------------*/
-
-header {
-    position: unset;
-    padding: 1rem 0;
-    background: var(--color-2);
-}
-
-.nav-flex {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-
-/* --------------- 
-
 Texty a nadpisy 
 
 ---------------*/
@@ -241,11 +222,12 @@ instructor
     flex-direction: column;
     grid-column-start: 6;
     grid-column-end: 11;
+    justify-content: center;
 }
 
 .instructor-details__education__tip-box {
     display: flex;
-    margin: 2rem 0;
+    gap: 1rem;
 }
 
 .instructor-details__education__tip-box__tip .material-icons {
@@ -358,6 +340,7 @@ available courses
 .a-c__image-part__bg-image {
     width: 100%;
     height: 100%;
+    object-fit: fill;
 }
 
 .a-c__image-part__content {
@@ -384,6 +367,7 @@ available courses
     height: 2.5rem;
     margin: 1rem;
     border-radius: 100%;
+    object-fit: cover;
 }
 
 .a-c__image-part__content__price {
@@ -443,4 +427,62 @@ available courses
     margin-right: .25em;
     vertical-align: middle;
     color: var(--color-1);
+}
+
+@media only screen and (max-width: 1500px) {
+    .instructor-details__education__tip-box,
+    .instructor-details__education__tip-box {
+        flex-direction: column;
+    }
+    .instructor-details__education__tip-box__tip,
+    .instructor-details__education__tip-box__tip {
+        margin: 0;
+    }
+    .instructor-details__profile,
+    .instructor-details__about {
+        grid-column-start: 1;
+        grid-column-end: 11;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .header-sub-page {
+        height: max-content;
+    }
+    .nav-flex--center {
+        flex-direction: column;
+    }
+    .nav-flex--center nav {
+        align-self: start;
+    }
+    .nav-flex--center .header-socials__button--signin {
+        top: 2rem;
+    }
+    .instructor-details__certification,
+    .instructor-details__education-experience {
+        grid-column-start: 1;
+        grid-column-end: 11;
+    }
+    .instructor-details__tip-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .instructor-details__tip-box__tip:last-child {
+        padding: 0;
+        border: 0;
+        border-top: 1px solid;
+    }
+    /*
+        Available Courses
+    */
+    .available-courses-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .page-title__header {
+        font-size: 2.5rem;
+    }
 }
