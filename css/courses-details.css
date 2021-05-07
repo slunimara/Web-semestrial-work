@@ -372,8 +372,9 @@ header {
 }
 
 .faq_question__image {
-    width: 20%;
+    width: 50%;
     margin-right: 1rem;
+    object-fit: cover;
 }
 
 .course-details__instructors__list {
@@ -392,9 +393,11 @@ header {
 }
 
 .course-details__instructors__list img {
-    width: 50%;
+    width: 12rem;
+    height: 12rem;
     border-radius: 100%;
     margin-bottom: 1rem;
+    object-fit: cover;
 }
 
 .course-details__instructors__name {
@@ -507,3 +510,25 @@ header {
 .c-d__aside__add {
     width: 100%;
 }
+
+@media only screen and (max-width: 1200px) {
+    .course-details {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .faq_question__content__container {
+        flex-direction: column;
+    }
+    .faq_question__image {
+        width: 50%;
+    }
+    .course-details__instructors__list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 576px) {}

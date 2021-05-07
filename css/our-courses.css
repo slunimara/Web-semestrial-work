@@ -374,27 +374,3 @@ header {
         grid-gap: 1rem;
     }
 }
-
-@media only screen and (max-width: 992px) {
-    .header-sub-page {
-        height: max-content;
-    }
-    .nav-flex--center {
-        flex-direction: column;
-    }
-    .nav-flex--center nav {
-        align-self: start;
-    }
-    .nav-flex--center .header-socials__button--signin {
-        top: 2rem;
-    }
-    .news-blog__flex {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .page-title__header {
-        font-size: 2.5rem;
-    }
-}
