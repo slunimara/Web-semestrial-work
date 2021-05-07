@@ -165,10 +165,12 @@ Become section
 ---------------*/
 
 .become-instructor {
-    width: 30%;
+    width: 40%;
     padding: 9rem 0;
-    padding-left: 20%;
+    padding-left: 10%;
     background-color: #0e1951;
+    display: flex;
+    flex-direction: column;
 }
 
 .become-partner {
@@ -176,6 +178,8 @@ Become section
     padding: 9rem 0;
     padding-left: 10%;
     background-color: #000846;
+    display: flex;
+    flex-direction: column;
 }
 
 .become-sections__hgroup {
@@ -188,7 +192,7 @@ Become section
 }
 
 .become-sections__sub-header::before {
-    content: "â–  â–  â– ";
+    content: "■ ■ ■";
 }
 
 .become-sections__main-header {
@@ -231,35 +235,27 @@ Become section
     background-color: #3662ff;
 }
 
-
-/* --------------- 
-
-Companies
-
----------------*/
-
-.companies {
-    padding: 3rem 0;
-    background: var(--color-1);
-}
-
-.companies__list {
-    width: 100%;
-    display: grid;
-    grid-gap: 6rem 0;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
-    align-items: center;
-}
-
 @media only screen and (max-width: 1300px) {
     .faq-content__side,
     .faq-content__faq {
         grid-column-start: 1;
         grid-column-end: 3;
     }
+    .become-sections {
+        flex-direction: column;
+    }
+    .become-partner,
+    .become-instructor {
+        align-items: center;
+        width: 100%;
+        padding: 6rem 0;
+    }
 }
 
 @media only screen and (max-width: 992px) {}
 
-@media only screen and (max-width: 576px) {}
+@media only screen and (max-width: 576px) {
+    .become-sections__paragraph {
+        width: 20rem;
+    }
+}
