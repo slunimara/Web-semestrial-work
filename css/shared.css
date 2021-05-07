@@ -470,6 +470,18 @@ nav .material-icons {
     .header__navbar__flex {
         flex-direction: column;
     }
+    .header-sub-page {
+        height: max-content;
+    }
+    .nav-flex--center {
+        flex-direction: column;
+    }
+    .nav-flex--center nav {
+        align-self: start;
+    }
+    .nav-flex--center .header-socials__button--signin {
+        top: 2rem;
+    }
     /*
       Companies
     */
@@ -518,5 +530,8 @@ nav .material-icons {
     }
     nav li .material-icons {
         display: none;
+    }
+    .page-title__header {
+        font-size: 2.5rem;
     }
 }
