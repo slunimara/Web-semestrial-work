@@ -1,19 +1,9 @@
-:root {
-    --color-1: #ea5822;
-    --color-2: #eaf4f7;
-    --color-3: #062a35;
-    --color-4: #b7b7b7;
-    --color-5: #324d56;
-    --color-6: #0d3541;
-    --color-7: #427b8e;
-}
-
 .flex-items {
     display: flex;
 }
 
 .color-2 {
-    background: var(--color-2);
+    background: #eaf4f7;
 }
 
 
@@ -26,7 +16,7 @@ Header
 header {
     position: unset;
     padding: 1rem 0;
-    background: var(--color-2);
+    background: #eaf4f7;
 }
 
 .nav-flex {
@@ -71,7 +61,7 @@ FAQ Content
     font-size: 0.75rem;
     font-weight: bold;
     text-align: center;
-    color: var(--color-1);
+    color: #ea5822;
 }
 
 .our-founder__description {
@@ -79,7 +69,7 @@ FAQ Content
     padding-bottom: 2rem;
     font-size: 0.75rem;
     text-align: center;
-    color: var(--color-4);
+    color: #b7b7b7;
 }
 
 .faq-content__contact-us {
@@ -109,12 +99,12 @@ FAQ Content
 }
 
 .contact-us__input .material-icons {
-    color: var(--color-1);
+    color: #ea5822;
 }
 
 .faq-content__contact-us .main-button {
     width: 80%;
-    background: var(--color-1);
+    background: #ea5822;
 }
 
 .faq-content__faq {
@@ -143,18 +133,18 @@ FAQ Content
 }
 
 .faq_question__header--active {
-    color: var(--color-1);
+    color: #ea5822;
 }
 
 .faq_question__paragraph {
     font-size: .85rem;
     line-height: 1.25rem;
-    color: var(--color-4);
+    color: #b7b7b7;
 }
 
 .faq_question .material-icons {
     font-weight: bold;
-    color: var(--color-1);
+    color: #ea5822;
 }
 
 
@@ -204,7 +194,7 @@ Become section
     margin-bottom: 2rem;
     font-size: 1rem;
     line-height: 1.5rem;
-    color: var(--color-2);
+    color: #eaf4f7;
 }
 
 .become-sections__button {
@@ -228,7 +218,7 @@ Become section
 }
 
 .become-partner .become-sections__button {
-    background-color: var(--color-1);
+    background-color: #ea5822;
 }
 
 .become-instructor .become-sections__button {

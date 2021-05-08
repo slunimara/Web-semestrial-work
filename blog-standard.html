@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -10,53 +10,82 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="css/shared.css" />
     <link rel="stylesheet" href="css/blog-standard.css" />
+    <script src="library/spotlight.bundle.js"></script>
 </head>
 
 <body>
     <header class="header-sub-page">
         <div class="nav-flex nav-flex--center">
-            <a href="#Home" class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <img class="logo__img" src="icons/EduLogo.png" alt="logo" />
                 <span class="logo__text">
                     <span class="logo-edu">Edu</span>Plus
                 </span>
             </a>
             <nav>
-                <ul>
-                    <a href="">
-                        <li>
-                            Home<span class="material-icons">expand_more</span>
-                        </li>
-                    </a>
-
-                    <a href="">
-                        <li>
-                            Courses<span class="material-icons">expand_more</span>
-                        </li>
-                    </a>
-
-                    <a href="">
-                        <li>
-                            Events<span class="material-icons">expand_more</span>
-                        </li>
-                    </a>
-
-                    <a href="">
-                        <li>
-                            Pages<span class="material-icons">expand_more</span>
-                        </li>
-                    </a>
-
-                    <a href="">
-                        <li>
-                            Blog<span class="material-icons">expand_more</span>
-                        </li>
-                    </a>
-                    <a href="">
-                        <li>
-                            Contact
-                        </li>
-                    </a>
+                <ul class="nav__ul">
+                    <li class="nav__main-li">
+                        <a href="index.html">
+                            Home<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop"><a href="index.html#course_categories">Course Categories</a></li>
+                            <li class="nav__li__drop"><a href="index.html#available_courses">Available Courses</a></li>
+                            <li class="nav__li__drop"><a href="index.html#campus_gallery">Campus Gallery</a></li>
+                            <li class="nav__li__drop">
+                                <a href="index.html#expert_instructors">Expert Instructors</a>
+                            </li>
+                            <li class="nav__li__drop"><a href="index.html#upcoming_events">Upcoming Events</a></li>
+                            <li class="nav__li__drop"><a href="index.html#students_say">Student's Feedback</a></li>
+                            <li class="nav__li__drop"><a href="index.html#become_an_instructor">Become an Instructor</a>
+                            </li>
+                            <li class="nav__li__drop">
+                                <a href="index.html#lastest_news">Lastest News & Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__main-li"><a href="our-dourses.html">
+                            Courses<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop"><a href="index.html#course_categories">Course Categories</a></li>
+                            <li class="nav__li__drop"><a href="our-dourses.html">Course List</a></li>
+                            <li class="nav__li__drop"><a href="courses-detail.html">Course Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__main-li">
+                        <a href="index.html#upcoming_events">
+                            Events<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop"><a href="index.html#upcoming_events">Upcoming Events</a></li>
+                            <li class="nav__li__drop"><a href="events-detail.html">Events Detail</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__main-li"><a href="FAQ.html">
+                            Pages<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop">
+                                <a href="about-us.html">About Us</a>
+                            </li>
+                            <li class="nav__li__drop"><a href="FAQ.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__main-li">
+                        <a href="blog-standard.html">
+                            Blog<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop"><a href="blog-standard.html">Blog Grid</a></li>
+                            <li class="nav__li__drop"><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__main-li">
+                        <a href="contact-us.html">
+                            Contact<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop">
+                                <a href="contact-us.html">Contact</a>
+                            </li>
+                            <li class="nav__li__drop"><a href="about-us.html">About Us</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -70,7 +99,7 @@
     </header>
 
     <main>
-        <div class="page-title" alt="Smiling students">
+        <div class="page-title">
             <h1 class="page-title__header">Blog Grid</h1>
             <h2 class="page-title__location">Home > Blog Grid</h2>
         </div>
@@ -96,9 +125,10 @@
                                 join event
                                 <span class="material-icons">east</span>
                             </button>
+                        </div>
                     </article>
                     <article class="blog-details__article">
-                        <img src="img/engineering (2).jpg" alt="Female students" class="b-d__article__main-img">
+                        <img src="img/engineering(2).jpg" alt="Female students" class="b-d__article__main-img">
                         <div class="blog-details__article__content">
                             <div class="b-d__article__tag">design</div>
                             <h2 class="b-d__article__main-header">Inspire design decisin with ott storch when idea how to space and ern puncutation</h2>
@@ -115,9 +145,10 @@
                                 join event
                                 <span class="material-icons">east</span>
                             </button>
+                        </div>
                     </article>
                     <article class="blog-details__article">
-                        <img src="img/classroom.jpg" alt="Female students" class="b-d__article__main-img">
+                        <img src="img/classroom(1).jpg" alt="Female students" class="b-d__article__main-img">
                         <div class="blog-details__article__content">
                             <div class="b-d__article__tag">design</div>
                             <h2 class="b-d__article__main-header">Inspire design decisin with ott storch when idea how to space and ern puncutation</h2>
@@ -134,6 +165,7 @@
                                 join event
                                 <span class="material-icons">east</span>
                             </button>
+                        </div>
                     </article>
                     <div class="b-d__article__citate">
                         <h3 class="article__citate__header">How to build an accesible fornt-End Application with chackra uI and Nuxt.js</h3>
@@ -142,7 +174,7 @@
                         </h3>
                     </div>
                     <article class="blog-details__article">
-                        <img src="img/classroom (2).jpg" alt="Female students" class="b-d__article__main-img">
+                        <img src="img/classroom(2).jpg" alt="Female students" class="b-d__article__main-img">
                         <div class="blog-details__article__content">
                             <div class="b-d__article__tag">design</div>
                             <h2 class="b-d__article__main-header">Inspire design decisin with ott storch when idea how to space and ern puncutation</h2>
@@ -159,112 +191,125 @@
                                 join event
                                 <span class="material-icons">east</span>
                             </button>
+                        </div>
                     </article>
-                    </div>
-                    <aside class="blog-details__aside">
-                        <div class="b-g__aside__search-bar">
-                            <h3 class="aside__search-bar__header">Search Here</h3>
-                            <span class="aside__search-bar__input">
+                </div>
+                <aside class="blog-details__aside">
+                    <div class="b-g__aside__search-bar">
+                        <h3 class="aside__search-bar__header">Search Here</h3>
+                        <span class="aside__search-bar__input">
                             <input type="text" placeholder="keywords" />
                             <span class="material-icons">search</span>
-                            </span>
-                        </div>
-                        <div class="b-g__aside__categories">
-                            <div class="aside__categories__category">
-                                <h3>Web Design</h3>
-                                <span class="material-icons">chevron_right</span>
-                            </div>
-                            <div class="aside__categories__category aside__categories__category--active">
-                                <h3>Computer Engineering</h3>
-                                <span class="material-icons">chevron_right</span>
-                            </div>
-                            <div class="aside__categories__category">
-                                <h3>Business Studies</h3>
-                                <span class="material-icons">chevron_right</span>
-                            </div>
-                            <div class="aside__categories__category">
-                                <h3>medical & Health</h3>
-                                <span class="material-icons">chevron_right</span>
-                            </div>
-                            <div class="aside__categories__category">
-                                <h3>Web Development</h3>
-                                <span class="material-icons">chevron_right</span>
-                            </div>
-                            <div class="aside__categories__category">
-                                <h3>Learning English</h3>
-                                <span class="material-icons">chevron_right</span>
-                            </div>
-                        </div>
-                        <div class="b-d__aside__recent-news">
-                            <h3>Recent News</h3>
-                            <div class="aside__recent-news__list">
-                                <div class="aside__recent-news">
-                                    <img src="img/classroom (2).jpg" alt="news image">
-                                    <div>
-                                        <h4 class="aside__recent-news__name">Small Podcast Epics Ode 15 With Phile</h3>
-                                            <h4 class="aside__recent-news__author">By Silvia Hola</h3>
-                                    </div>
-                                </div>
-                                <div class="aside__recent-news">
-                                    <img src="img/engineering (2).jpg" alt="news image">
-                                    <div>
-                                        <h4 class="aside__recent-news__name">Small Podcast Epics Ode 15 With Phile</h3>
-                                            <h4 class="aside__recent-news__author">By Silvia Hola</h3>
-                                    </div>
-                                </div>
-                                <div class="aside__recent-news">
-                                    <img src="img/teacher (2).jpg" alt="news image">
-                                    <div>
-                                        <h4 class="aside__recent-news__name">Small Podcast Epics Ode 15 With Phile</h3>
-                                            <h4 class="aside__recent-news__author">By Silvia Hola</h3>
-                                    </div>
-                                </div>
-                                <div class="aside__recent-news">
-                                    <img src="img/student (4).jpg" alt="news image">
-                                    <div>
-                                        <h4 class="aside__recent-news__name">Small Podcast Epics Ode 15 With Phile</h3>
-                                            <h4 class="aside__recent-news__author">By Silvia Hola</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="b-d__aside__gallery">
-                            <h3 class="aside__gallery__header">Gallery</h3>
-                            <div class="aside__gallery__images">
-                                <img class="b-d__aside__gallery__image" src="img/student (3).jpg" alt="instagram image">
-                                <img class="b-d__aside__gallery__image" src="img/student (2).jpg" alt="phone image">
-                                <img class="b-d__aside__gallery__image" src="img/engineering (1).jpg" alt="instagram image">
-                                <img class="b-d__aside__gallery__image" src="img/girl-with-book.jpg" alt="phone image">
-                                <img class="b-d__aside__gallery__image" src="img/engineering (3).jpg" alt="instagram image">
-                                <img class="b-d__aside__gallery__image" src="img/cafe.jpg" alt="phone image">
-                            </div>
-                        </div>
-                        <div class="b-d__aside__tags">
-                            <h3 class="aside__tags__header">Popular Tags</h3>
-                            <div class="aside__tags__list">
-                                <h4 class="aside__tags__tag">Design</h4>
-                                <h4 class="aside__tags__tag">Portfolio</h4>
-                                <h4 class="aside__tags__tag">Energy</h4>
-                                <h4 class="aside__tags__tag">Resume</h4>
-                                <h4 class="aside__tags__tag">Gallery</h4>
-                                <h4 class="aside__tags__tag">Renewable</h4>
-                            </div>
-                        </div>
-                        <img class="b-d__aside__add" src="img/add.jpg" alt="Advertisment">
-                    </aside>
+                        </span>
                     </div>
+                    <div class="b-g__aside__categories">
+                        <div class="aside__categories__category">
+                            <h3>Web Design</h3>
+                            <span class="material-icons">chevron_right</span>
+                        </div>
+                        <div class="aside__categories__category">
+                            <h3>Computer Engineering</h3>
+                            <span class="material-icons">chevron_right</span>
+                        </div>
+                        <div class="aside__categories__category">
+                            <h3>Business Studies</h3>
+                            <span class="material-icons">chevron_right</span>
+                        </div>
+                        <div class="aside__categories__category">
+                            <h3>medical & Health</h3>
+                            <span class="material-icons">chevron_right</span>
+                        </div>
+                        <div class="aside__categories__category">
+                            <h3>Web Development</h3>
+                            <span class="material-icons">chevron_right</span>
+                        </div>
+                        <div class="aside__categories__category">
+                            <h3>Learning English</h3>
+                            <span class="material-icons">chevron_right</span>
+                        </div>
                     </div>
+                    <div class="b-d__aside__recent-news">
+                        <h3>Recent News</h3>
+                        <div class="aside__recent-news__list">
+                            <div class="aside__recent-news">
+                                <img src="img/classroom(2).jpg" alt="news image">
+                                <div>
+                                    <h3 class="aside__recent-news__name">Small Podcast Epics Ode 15 With Phile</h3>
+                                    <h3 class="aside__recent-news__author">By Silvia Hola</h3>
+                                </div>
+                            </div>
+                            <div class="aside__recent-news">
+                                <img src="img/engineering(2).jpg" alt="news image">
+                                <div>
+                                    <h3 class="aside__recent-news__name">Small Podcast Epics Ode 15 With Phile</h3>
+                                    <h3 class="aside__recent-news__author">By Silvia Hola</h3>
+                                </div>
+                            </div>
+                            <div class="aside__recent-news">
+                                <img src="img/teacher(2).jpg" alt="news image">
+                                <div>
+                                    <h3 class="aside__recent-news__name">Small Podcast Epics Ode 15 With Phile</h3>
+                                    <h3 class="aside__recent-news__author">By Silvia Hola</h3>
+                                </div>
+                            </div>
+                            <div class="aside__recent-news">
+                                <img src="img/student(4).jpg" alt="news image">
+                                <div>
+                                    <h3 class="aside__recent-news__name">Small Podcast Epics Ode 15 With Phile</h3>
+                                    <h3 class="aside__recent-news__author">By Silvia Hola</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-d__aside__gallery">
+                        <h3 class="aside__gallery__header">Gallery</h3>
+                        <div class="aside__gallery__images">
+                            <a class="spotlight" href="img/student(3).jpg">
+                                <img class="b-d__aside__gallery__image" src="img/student(3).jpg" alt="Instagram image">
+                            </a>
+                            <a class="spotlight" href="img/student(2).jpg">
+                                <img class="b-d__aside__gallery__image" src="img/student(2).jpg" alt="Instagram image">
+                            </a>
+                            <a class="spotlight" href="img/engineering(1).jpg">
+                                <img class="b-d__aside__gallery__image" src="img/engineering(1).jpg" alt="Instagram image">
+                            </a>
+                            <a class="spotlight" href="img/girl-with-book.jpg">
+                                <img class="b-d__aside__gallery__image" src="img/girl-with-book.jpg" alt="Instagram image">
+                            </a>
+                            <a class="spotlight" href="img/engineering(3).jpg">
+                                <img class="b-d__aside__gallery__image" src="img/engineering(3).jpg" alt="Instagram image">
+                            </a>
+                            <a class="spotlight" href="img/cafe.jpg">
+                                <img class="b-d__aside__gallery__image" src="img/cafe.jpg" alt="Instagram image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="b-d__aside__tags">
+                        <h3 class="aside__tags__header">Popular Tags</h3>
+                        <div class="aside__tags__list">
+                            <h4 class="aside__tags__tag">Design</h4>
+                            <h4 class="aside__tags__tag">Portfolio</h4>
+                            <h4 class="aside__tags__tag">Energy</h4>
+                            <h4 class="aside__tags__tag">Resume</h4>
+                            <h4 class="aside__tags__tag">Gallery</h4>
+                            <h4 class="aside__tags__tag">Renewable</h4>
+                        </div>
+                    </div>
+                    <img class="b-d__aside__add" src="img/add.jpg" alt="Advertisment">
+                </aside>
+            </div>
+        </div>
 
 
-                    <div class="companies main-grid">
-                        <div class="companies__list">
-                            <img src="icons/mountain_slogan_here.png" alt="Mountain Slogan Here" />
-                            <img src="icons/circle_slogan_here.png" alt="Circle Slogan Here" />
-                            <img src="icons/globe_slogan_here.png" alt="Globe Slogan Here" />
-                            <img src="icons/paper_slogan_here.png" alt="Paper Slogan Here" />
-                            <img src="icons/sumit_slogan_here.png" alt="Sumit Slogan Here" />
-                        </div>
-                    </div>
+        <div class="companies main-grid">
+            <div class="companies__list">
+                <img src="icons/mountain_slogan_here.png" alt="Mountain Slogan Here" />
+                <img src="icons/circle_slogan_here.png" alt="Circle Slogan Here" />
+                <img src="icons/globe_slogan_here.png" alt="Globe Slogan Here" />
+                <img src="icons/paper_slogan_here.png" alt="Paper Slogan Here" />
+                <img src="icons/sumit_slogan_here.png" alt="Sumit Slogan Here" />
+            </div>
+        </div>
     </main>
     <footer class="main-grid footer">
         <div class="main-grid__content">
@@ -285,38 +330,39 @@
                 </div>
             </div>
             <div class="footer-bottom-part">
-                <button class="main-button nav-to-top"><span class="material-icons"> expand_less
-                    </span></button>
+                <button class="main-button nav-to-top" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>
+                    <span class="material-icons">expand_less</span>
+                </button>
                 <div class="footer-categories">
                     <h2>Our Courses</h2>
-                    <ul>
-                        <div>
-                            <li>Web Development</li>
-                            <li>Business Studies</li>
-                            <li>Computer Engineering</li>
-                            <li>English Learning</li>
-                            <li>Graphic Design</li>
+                    <div class="footer-categories__ul">
+                        <div class="footer-categories__part">
+                            <div class="footer-categories__part__li">Web Development</div>
+                            <div class="footer-categories__part__li">Business Studies</div>
+                            <div class="footer-categories__part__li">Computer Engineering</div>
+                            <div class="footer-categories__part__li">English Learning</div>
+                            <div class="footer-categories__part__li">Graphic Design</div>
                         </div>
-                        <div>
-                            <li>Color Comoinitions</li>
-                            <li>Software Development</li>
-                            <li>Photography</li>
-                            <li>Advance WordPress</li>
-                            <li>Basic PSD to HTML</li>
+                        <div class="footer-categories__part">
+                            <div class="footer-categories__part__li">Color Comoinitions</div>
+                            <div class="footer-categories__part__li">Software Development</div>
+                            <div class="footer-categories__part__li">Photography</div>
+                            <div class="footer-categories__part__li">Advance WordPress</div>
+                            <div class="footer-categories__part__li">Basic PSD to HTML</div>
                         </div>
-                    </ul>
+                    </div>
                 </div>
                 <div class="footer-company">
                     <h2>Company</h2>
-                    <ul>
-                        <div>
-                            <li>About Eduket</li>
-                            <li>Meet Advisors</li>
-                            <li>Join A Career</li>
-                            <li>Latest Courses</li>
-                            <li>Newsletters</li>
+                    <div class="footer-company__ul">
+                        <div class="footer-company__part">
+                            <div class="footer-company__part_li">About Eduket</div>
+                            <div class="footer-company__part_li">Meet Advisors</div>
+                            <div class="footer-company__part_li">Join A Career</div>
+                            <div class="footer-company__part_li">Latest Courses</div>
+                            <div class="footer-company__part_li">Newsletters</div>
                         </div>
-                    </ul>
+                    </div>
                 </div>
                 <div class="footer-newsletters">
                     <h2>Newsletters</h2>

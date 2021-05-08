@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -15,48 +15,76 @@
 <body>
     <header class="header-sub-page">
         <div class="nav-flex nav-flex--center">
-            <a href="#Home" class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <img class="logo__img" src="icons/EduLogo.png" alt="logo" />
                 <span class="logo__text">
                     <span class="logo-edu">Edu</span>Plus
                 </span>
             </a>
             <nav>
-                <ul>
-                    <a href="">
-                        <li>
-                            Home<span class="material-icons">expand_more</span>
-                        </li>
-                    </a>
-
-                    <a href="">
-                        <li>
-                            Courses<span class="material-icons">expand_more</span>
-                        </li>
-                    </a>
-
-                    <a href="">
-                        <li>
-                            Events<span class="material-icons">expand_more</span>
-                        </li>
-                    </a>
-
-                    <a href="">
-                        <li>
-                            Pages<span class="material-icons">expand_more</span>
-                        </li>
-                    </a>
-
-                    <a href="">
-                        <li>
-                            Blog<span class="material-icons">expand_more</span>
-                        </li>
-                    </a>
-                    <a href="">
-                        <li>
-                            Contact
-                        </li>
-                    </a>
+                <ul class="nav__ul">
+                    <li class="nav__main-li">
+                        <a href="index.html">
+                            Home<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop"><a href="index.html#course_categories">Course Categories</a></li>
+                            <li class="nav__li__drop"><a href="index.html#available_courses">Available Courses</a></li>
+                            <li class="nav__li__drop"><a href="index.html#campus_gallery">Campus Gallery</a></li>
+                            <li class="nav__li__drop">
+                                <a href="index.html#expert_instructors">Expert Instructors</a>
+                            </li>
+                            <li class="nav__li__drop"><a href="index.html#upcoming_events">Upcoming Events</a></li>
+                            <li class="nav__li__drop"><a href="index.html#students_say">Student's Feedback</a></li>
+                            <li class="nav__li__drop"><a href="index.html#become_an_instructor">Become an Instructor</a>
+                            </li>
+                            <li class="nav__li__drop">
+                                <a href="index.html#lastest_news">Lastest News & Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__main-li"><a href="our-dourses.html">
+                            Courses<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop"><a href="index.html#course_categories">Course Categories</a></li>
+                            <li class="nav__li__drop"><a href="our-dourses.html">Course List</a></li>
+                            <li class="nav__li__drop"><a href="courses-detail.html">Course Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__main-li">
+                        <a href="index.html#upcoming_events">
+                            Events<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop"><a href="index.html#upcoming_events">Upcoming Events</a></li>
+                            <li class="nav__li__drop"><a href="events-detail.html">Events Detail</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__main-li"><a href="FAQ.html">
+                            Pages<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop">
+                                <a href="about-us.html">About Us</a>
+                            </li>
+                            <li class="nav__li__drop"><a href="FAQ.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__main-li">
+                        <a href="blog-standard.html">
+                            Blog<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop"><a href="blog-standard.html">Blog Grid</a></li>
+                            <li class="nav__li__drop"><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__main-li">
+                        <a href="contact-us.html">
+                            Contact<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop">
+                                <a href="contact-us.html">Contact</a>
+                            </li>
+                            <li class="nav__li__drop"><a href="about-us.html">About Us</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -70,25 +98,23 @@
     </header>
 
     <main>
-        <div class="page-title" alt="Smiling students">
+        <div class="page-title">
             <h1 class="page-title__header">About Us</h1>
             <h2 class="page-title__location">Home > About Us</h2>
         </div>
 
-        <section class="about-edu main-grid">
+        <div class="about-edu main-grid">
             <div class="main-grid__content">
                 <div class="about-edu__flex">
                     <div class="about-edu__image-box">
                         <img class="about-edu__image" src="img/teachers-meeting.jpg" alt="Group of instructors">
-                        <img class="about-edu__image-2" src="img/teacher (5).jpg" alt="Instructor female">
+                        <img class="about-edu__image-2" src="img/teacher(5).jpg" alt="Instructor female">
                     </div>
                     <section class="about-edu__section">
-                        <hroup>
-                            <div class="main-hgroup">
-                                <h2 class="sub-header">■ ■ ■ Introduce About EduPlus</h2>
-                                <h2 class="main-header"><strong>Welcome To EduPlus</strong></h2>
-                            </div>
-                        </hroup>
+                        <div class="main-hgroup">
+                            <h2 class="sub-header">■ ■ ■ Introduce About EduPlus</h2>
+                            <h2 class="main-header"><strong>Welcome To EduPlus</strong></h2>
+                        </div>
                         <p class="a-e__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In enim a arcu imperdiet malesuada. Fusce consectetuer risus a nunc.</p>
                         <div class="a-e__tip-box">
                             <div class="a-e__tip-box__tip">
@@ -149,23 +175,21 @@
                 </div>
 
             </div>
-        </section>
+        </div>
 
         <section class="institute-goals main-grid">
             <div class="main-grid__content">
                 <div class="institute-goals__flex">
                     <div>
-                        <hroup>
-                            <div class="main-hgroup">
-                                <h2 class="sub-header">■ ■ ■ Team Members</h2>
-                                <h2 class="main-header"><strong>Expert Instructor</strong></h2>
-                            </div>
-                        </hroup>
+                        <div class="main-hgroup">
+                            <h2 class="sub-header">■ ■ ■ Team Members</h2>
+                            <h2 class="main-header"><strong>Expert Instructor</strong></h2>
+                        </div>
                         <p class="institute-goals_paragraph">Aliquam erat volutpat. Cras elementum. Morbi scelerisque luctus velit. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
                             Aenean vel massa quis mauris vehicula lacinia.</p>
-                        <img class="institute-goals_statistics" src="img/round statistics.jpg" alt="Round statistics">
+                        <img class="institute-goals_statistics" src="img/round_statistics.jpg" alt="Round statistics">
                     </div>
-                    <img class="institute-goals__video" src="img/classroom.jpg" alt="Video">
+                    <img class="institute-goals__video" src="img/classroom(1).jpg" alt="Video">
                 </div>
             </div>
         </section>
@@ -173,19 +197,17 @@
         <!-- instructors -->
         <section class="expert-instructors main-grid">
             <div class="main-grid__content">
-                <hroup>
-                    <div class="main-hgroup">
-                        <h2 class="sub-header">■ ■ ■ Team Members ■ ■ ■</h2>
-                        <h2 class="main-header"><strong>Expert Instructor</strong></h2>
-                    </div>
-                </hroup>
+                <div class="main-hgroup">
+                    <h2 class="sub-header">■ ■ ■ Team Members ■ ■ ■</h2>
+                    <h2 class="main-header"><strong>Expert Instructor</strong></h2>
+                </div>
 
                 <div class="expert-instructors__instructors">
                     <div class="instructors__instructor">
                         <div class="instructor__more-info">
                             <span class="material-icons">add</span>
                         </div>
-                        <img class="instructor__image" src="img/teacher (2).jpg" alt="Teacher photo">
+                        <img class="instructor__image" src="img/teacher(2).jpg" alt="Teacher photo">
                         <div class="instructor__description">
                             <h3 class="instructor__name">Somalia D Silva</h3>
                             <h3 class="instructor__type">Math Teacher</h3>
@@ -199,7 +221,7 @@
                         <div class="instructor__more-info">
                             <span class="material-icons">add</span>
                         </div>
-                        <img class="instructor__image" src="img/teacher (5).jpg" alt="Teacher photo">
+                        <img class="instructor__image" src="img/teacher(5).jpg" alt="Teacher photo">
                         <div class="instructor__description">
                             <h3 class="instructor__name">Margot Rob </h3>
                             <h3 class="instructor__type">Math Teacher</h3>
@@ -213,7 +235,7 @@
                         <div class="instructor__more-info">
                             <span class="material-icons">add</span>
                         </div>
-                        <img class="instructor__image" src="img/teacher (6).jpg" alt="Teacher photo">
+                        <img class="instructor__image" src="img/teacher(6).jpg" alt="Teacher photo">
                         <div class="instructor__description">
                             <h3 class="instructor__name">Brad Pi</h3>
                             <h3 class="instructor__type">Math Teacher</h3>
@@ -227,7 +249,7 @@
                         <div class="instructor__more-info">
                             <span class="material-icons">add</span>
                         </div>
-                        <img class="instructor__image" src="img/teacher (1).jpg" alt="Teacher photo">
+                        <img class="instructor__image" src="img/teacher(1).jpg" alt="Teacher photo">
                         <div class="instructor__description">
                             <h3 class="instructor__name">Leonardo Cap</h3>
                             <h3 class="instructor__type">Math Teacher</h3>
@@ -240,18 +262,15 @@
 
 
             </div>
-            </div>
         </section>
 
         <!-- recom -->
         <article class="students-feedback main-grid">
             <div class="main-grid__content">
-                <hroup>
-                    <div class="main-hgroup">
-                        <h2 class="sub-header">■ ■ ■ Students Feedback ■ ■ ■</h2>
-                        <h2 class="main-header"><strong>What Our Students Say</strong></h2>
-                    </div>
-                </hroup>
+                <div class="main-hgroup">
+                    <h2 class="sub-header">■ ■ ■ Students Feedback ■ ■ ■</h2>
+                    <h2 class="main-header"><strong>What Our Students Say</strong></h2>
+                </div>
 
                 <div class="students-feedback__flex">
                     <div class="students-feedback__citate">
@@ -261,7 +280,7 @@
                                 culpa qui officia deserunt mollit anim id est laborum.</p>
                             <p class="s-f__citate__main-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In enim a arcu imperdiet malesuada. Fusce consectetuer risus a nunc.</p>
                             <div class="s-f__citate__autor">
-                                <img src="img/teacher (4).jpg" alt="Autor's photo">
+                                <img src="img/teacher(4).jpg" alt="Autor's photo">
                                 <div>
                                     <h3 class="s-f__citate__autor__name">Sousa Fernandes</h3>
                                     <h3 class="s-f__citate__autor__description">CEO & Founder</h3>
@@ -271,7 +290,7 @@
                                 <button class="main-button s-f__citate__button">
                                     <span class="material-icons">west</span>
                                 </button>
-                                <button class="main-button s-f__citate__button s-f__citate__button--active">
+                                <button class="main-button s-f__citate__button">
                                     <span class="material-icons">east</span>
                                 </button>
                             </div>
@@ -287,16 +306,14 @@
 
         <!-- news blog -->
         <article class="news-blog main-grid">
-            <hroup>
-                <div class="main-hgroup">
-                    <h2 class="sub-header">■ ■ ■ Articles & Tips ■ ■ ■</h2>
-                    <h2 class="main-header"><strong>Lastest News & Blog</strong></h2>
-                </div>
-            </hroup>
+            <div class="main-hgroup">
+                <h2 class="sub-header">■ ■ ■ Articles & Tips ■ ■ ■</h2>
+                <h2 class="main-header"><strong>Lastest News & Blog</strong></h2>
+            </div>
 
             <div class="news-blog__flex">
                 <section class="news-blog__news">
-                    <img class="n-b__news__main-image" src="img/teacher (1).jpg" alt="Gilr with a book.">
+                    <img class="n-b__news__main-image" src="img/teacher(1).jpg" alt="Gilr with a book.">
                     <div class="n-b__news__content">
                         <ul class="n-b__news__dates">
                             <li><span class="material-icons">date_range</span>25 nov 2020</li>
@@ -305,14 +322,14 @@
 
                         <h3 class="n-b__news__heading">Learning Resources in Challenging Times Online Workshop</h3>
                         <div class="n-b__news__user">
-                            <img src="img/teacher (2).jpg" class="n-b__news__user__photo" alt="Autor's image">
+                            <img src="img/teacher(2).jpg" class="n-b__news__user__photo" alt="Autor's image">
                             <h4 class="n-b__news__user__name">David Simala</h4>
                         </div>
                         <button class="main-button n-b__news__button"><span class="material-icons">east</span></button>
                     </div>
                 </section>
                 <section class="news-blog__news">
-                    <img class="n-b__news__main-image" src="img/study (2).jpg" alt="Gilr with a book.">
+                    <img class="n-b__news__main-image" src="img/study(2).jpg" alt="Gilr with a book.">
                     <div class="n-b__news__content">
                         <ul class="n-b__news__dates">
                             <li><span class="material-icons">date_range</span>25 nov 2020</li>
@@ -321,15 +338,14 @@
 
                         <h3 class="n-b__news__heading">Learning Resources in Challenging Times Online Workshop</h3>
                         <div class="n-b__news__user">
-                            <img src="img/teacher (5).jpg" class="n-b__news__user__photo" alt="Autor's image">
+                            <img src="img/teacher(5).jpg" class="n-b__news__user__photo" alt="Autor's image">
                             <h4 class="n-b__news__user__name">David Simala</h4>
                         </div>
-                        <button class="main-button n-b__news__button n-b__news__button--colored"><span
-                                class="material-icons">east</span></button>
+                        <button class="main-button n-b__news__button"><span class="material-icons">east</span></button>
                     </div>
                 </section>
                 <section class="news-blog__news">
-                    <img class="n-b__news__main-image" src="img/student (4).jpg" alt="Gilr with a book.">
+                    <img class="n-b__news__main-image" src="img/student(4).jpg" alt="Gilr with a book.">
                     <div class="n-b__news__content">
                         <ul class="n-b__news__dates">
                             <li><span class="material-icons">date_range</span>25 nov 2020</li>
@@ -338,7 +354,7 @@
 
                         <h3 class="n-b__news__heading">Learning Resources in Challenging Times Online Workshop</h3>
                         <div class="n-b__news__user">
-                            <img src="img/teacher (2).jpg" class="n-b__news__user__photo" alt="Autor's image">
+                            <img src="img/teacher(2).jpg" class="n-b__news__user__photo" alt="Autor's image">
                             <h4 class="n-b__news__user__name">David Simala</h4>
                         </div>
                         <button class="main-button n-b__news__button"><span class="material-icons">east</span></button>
@@ -360,14 +376,12 @@
     <footer class="main-grid footer">
         <div class="main-grid__content">
             <div class="footer-top-part">
-                <!-- logo -->
                 <a href="#Home" class="nav-logo">
                     <img class="logo__img" src="icons/EduLogoWhite.png" alt="logo" />
                     <span class="logo__text">
                         <span class="logo-edu">Edu</span>Plus
                     </span>
                 </a>
-                <!-- socky -->
                 <div class="footer-socials-container">
                     <a class="footer-social" href="https://www.facebook.com/"><img src="icons/facebook_logo.png" alt="Facebook" /> Facebook
                     </a>
@@ -378,42 +392,40 @@
                 </div>
             </div>
             <div class="footer-bottom-part">
-                <button class="main-button nav-to-top"><span class="material-icons"> expand_less
-                    </span></button>
-                <!-- our courses -->
+                <button class="main-button nav-to-top" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>
+                    <span class="material-icons">expand_less</span>
+                </button>
                 <div class="footer-categories">
                     <h2>Our Courses</h2>
-                    <ul>
-                        <div>
-                            <li>Web Development</li>
-                            <li>Business Studies</li>
-                            <li>Computer Engineering</li>
-                            <li>English Learning</li>
-                            <li>Graphic Design</li>
+                    <div class="footer-categories__ul">
+                        <div class="footer-categories__part">
+                            <div class="footer-categories__part__li">Web Development</div>
+                            <div class="footer-categories__part__li">Business Studies</div>
+                            <div class="footer-categories__part__li">Computer Engineering</div>
+                            <div class="footer-categories__part__li">English Learning</div>
+                            <div class="footer-categories__part__li">Graphic Design</div>
                         </div>
-                        <div>
-                            <li>Color Comoinitions</li>
-                            <li>Software Development</li>
-                            <li>Photography</li>
-                            <li>Advance WordPress</li>
-                            <li>Basic PSD to HTML</li>
+                        <div class="footer-categories__part">
+                            <div class="footer-categories__part__li">Color Comoinitions</div>
+                            <div class="footer-categories__part__li">Software Development</div>
+                            <div class="footer-categories__part__li">Photography</div>
+                            <div class="footer-categories__part__li">Advance WordPress</div>
+                            <div class="footer-categories__part__li">Basic PSD to HTML</div>
                         </div>
-                    </ul>
+                    </div>
                 </div>
-                <!-- company -->
                 <div class="footer-company">
                     <h2>Company</h2>
-                    <ul>
-                        <div>
-                            <li>About Eduket</li>
-                            <li>Meet Advisors</li>
-                            <li>Join A Career</li>
-                            <li>Latest Courses</li>
-                            <li>Newsletters</li>
+                    <div class="footer-company__ul">
+                        <div class="footer-company__part">
+                            <div class="footer-company__part_li">About Eduket</div>
+                            <div class="footer-company__part_li">Meet Advisors</div>
+                            <div class="footer-company__part_li">Join A Career</div>
+                            <div class="footer-company__part_li">Latest Courses</div>
+                            <div class="footer-company__part_li">Newsletters</div>
                         </div>
-                    </ul>
+                    </div>
                 </div>
-                <!-- newsletters -->
                 <div class="footer-newsletters">
                     <h2>Newsletters</h2>
                     <p>
@@ -424,7 +436,6 @@
                         <button class="main-button"><span class="material-icons">east</span></button>
                     </div>
                 </div>
-                <!-- Copyright -->
             </div>
             <div class="footer-copyright">
                 <p>Copyright &copy; 2020 <span class="logo--footer"><span class="logo-edu">Edu</span>Plus</span> All Rights Reserved.</p>

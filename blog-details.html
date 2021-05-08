@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -10,53 +10,82 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="css/shared.css" />
     <link rel="stylesheet" href="css/blog-details.css" />
+    <script src="library/spotlight.bundle.js"></script>
 </head>
 
 <body>
     <header class="header-sub-page">
         <div class="nav-flex nav-flex--center">
-            <a href="#Home" class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <img class="logo__img" src="icons/EduLogo.png" alt="logo" />
                 <span class="logo__text">
                     <span class="logo-edu">Edu</span>Plus
                 </span>
             </a>
             <nav>
-                <ul>
-                    <a href="">
-                        <li>
-                            Home<span class="material-icons">expand_more</span>
-                        </li>
-                    </a>
-
-                    <a href="">
-                        <li>
-                            Courses<span class="material-icons">expand_more</span>
-                        </li>
-                    </a>
-
-                    <a href="">
-                        <li>
-                            Events<span class="material-icons">expand_more</span>
-                        </li>
-                    </a>
-
-                    <a href="">
-                        <li>
-                            Pages<span class="material-icons">expand_more</span>
-                        </li>
-                    </a>
-
-                    <a href="">
-                        <li>
-                            Blog<span class="material-icons">expand_more</span>
-                        </li>
-                    </a>
-                    <a href="">
-                        <li>
-                            Contact
-                        </li>
-                    </a>
+                <ul class="nav__ul">
+                    <li class="nav__main-li">
+                        <a href="index.html">
+                            Home<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop"><a href="index.html#course_categories">Course Categories</a></li>
+                            <li class="nav__li__drop"><a href="index.html#available_courses">Available Courses</a></li>
+                            <li class="nav__li__drop"><a href="index.html#campus_gallery">Campus Gallery</a></li>
+                            <li class="nav__li__drop">
+                                <a href="index.html#expert_instructors">Expert Instructors</a>
+                            </li>
+                            <li class="nav__li__drop"><a href="index.html#upcoming_events">Upcoming Events</a></li>
+                            <li class="nav__li__drop"><a href="index.html#students_say">Student's Feedback</a></li>
+                            <li class="nav__li__drop"><a href="index.html#become_an_instructor">Become an Instructor</a>
+                            </li>
+                            <li class="nav__li__drop">
+                                <a href="index.html#lastest_news">Lastest News & Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__main-li"><a href="our-dourses.html">
+                            Courses<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop"><a href="index.html#course_categories">Course Categories</a></li>
+                            <li class="nav__li__drop"><a href="our-dourses.html">Course List</a></li>
+                            <li class="nav__li__drop"><a href="courses-detail.html">Course Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__main-li">
+                        <a href="index.html#upcoming_events">
+                            Events<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop"><a href="index.html#upcoming_events">Upcoming Events</a></li>
+                            <li class="nav__li__drop"><a href="events-detail.html">Events Detail</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__main-li"><a href="FAQ.html">
+                            Pages<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop">
+                                <a href="about-us.html">About Us</a>
+                            </li>
+                            <li class="nav__li__drop"><a href="FAQ.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__main-li">
+                        <a href="blog-standard.html">
+                            Blog<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop"><a href="blog-standard.html">Blog Grid</a></li>
+                            <li class="nav__li__drop"><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__main-li">
+                        <a href="contact-us.html">
+                            Contact<span class="material-icons">expand_more</span></a>
+                        <ul class="nav__ul__drop">
+                            <li class="nav__li__drop">
+                                <a href="contact-us.html">Contact</a>
+                            </li>
+                            <li class="nav__li__drop"><a href="about-us.html">About Us</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -70,7 +99,7 @@
     </header>
 
     <main>
-        <div class="page-title" alt="Smiling students">
+        <div class="page-title">
             <h1 class="page-title__header">Blog Details</h1>
             <h2 class="page-title__location">Home > Blog Details</h2>
         </div>
@@ -95,7 +124,7 @@
                         <p class="b-d__article__paragraph">In enim a arcu imperdiet malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Fusce suscipit libero eget elit. Aliquam id dolor. Etiam dictum tincidunt diam.In enim a arcu imperdiet
                             malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Fusce suscipit libero eget elit. Aliquam id dolor. Etiam dictum tincidunt diam.
                         </p>
-                        <img src="img/classroom.jpg" alt="classroom" class="b-d__article__content-img">
+                        <img src="img/classroom(1).jpg" alt="classroom" class="b-d__article__content-img">
                         <div class="b-d__article__li">
                             <span class="material-icons">done</span>
                             <h4 class="article__li__text">Embrance the possibilities march 2020 Wallpapers
@@ -122,15 +151,11 @@
                         </div>
                         <div class="b-d__article__socials">
                             <div class="b-d__article__socials__side">
-                                <strong>
-                                    <h3 class="article__socials__tag">Tags:</h3>
-                                </strong>
+                                <h3 class="article__socials__tag">Tags:</h3>
                                 <h3 class="article__socials__tags">Bussines Cart, Design & Branding</h3>
                             </div>
                             <div class="b-d__article__socials__side">
-                                <strong>
-                                    <h3 class="article__socials__share">Share</h3>
-                                </strong>
+                                <h3 class="article__socials__share">Share</h3>
                                 <div class="article__socials__icons">
                                     <img class="article__socials__icons--active" src="icons/facebook_logo.png" alt="facebook logo">
                                     <img src="icons/twitter_logo.png" alt="twitter logo">
@@ -140,7 +165,7 @@
                             </div>
                         </div>
                         <section class="b-d__article__author">
-                            <img src="img/teacher (5).jpg" alt="Person's image">
+                            <img src="img/teacher(5).jpg" alt="Person's image">
                             <div class="b-d__article__author__content">
                                 <h3 class="article__author__name">Eugne A. Pearsuun</h3>
                                 <p class="article__author__description">Nulla non arcu lacinia neque faucibus fringilla. Nunc tincidunt ante vitae massa. Proin mattis lacinia justo. Nulla non arcu lacinia neque faucibus fringilla.</p>
@@ -150,10 +175,11 @@
                                     <img src="icons/instagram_logo.png" alt="instagram logo">
                                     <img src="icons/google.png" alt="google logo">
                                 </div>
+                            </div>
                         </section>
                         <div class="b-d__article__other-articles">
                             <div class="article__other-articles__article">
-                                <img class="other-articles__article" src="img/teacher (3).jpg" alt="Other article image">
+                                <img class="other-articles__article" src="img/teacher(3).jpg" alt="Other article image">
                                 <div class="other-articles__article__content">
                                     <h3>Mixing Tangivle & Itan interfaces Using</h3>
                                     <ul class="b-d__article__description">
@@ -176,11 +202,11 @@
                         <section class="b-d__article__comments">
                             <h3 class="article__comments__header">People's Comments</h3>
                             <section class="article__comments__comment">
-                                <img class="comment__img" src="img/student (3).jpg" alt="Person's image">
+                                <img class="comment__img" src="img/student(3).jpg" alt="Person's image">
                                 <div class="comment__content">
                                     <h3 class="comment__name">David Warner</h3>
                                     <h3 class="comment__titles">CEO & Founder</h3>
-                                    <h3 class="comment__reply comment__reply--active">Reply comments
+                                    <h3 class="comment__reply">Reply comments
                                         <span class="material-icons">
                                             east
                                         </span>
@@ -189,7 +215,7 @@
                                 </div>
                             </section>
                             <section class="article__comments__comment article__comments__comment--answer">
-                                <img class="comment__img" src="img/teacher (6).jpg" alt="Person's image">
+                                <img class="comment__img" src="img/teacher(6).jpg" alt="Person's image">
                                 <div class="comment__content">
                                     <h3 class="comment__name">David Warner</h3>
                                     <h3 class="comment__titles">CEO & Founder</h3>
@@ -202,7 +228,7 @@
                                 </div>
                             </section>
                             <section class="article__comments__comment">
-                                <img class="comment__img" src="img/teacher (7).jpg" alt="Person's image">
+                                <img class="comment__img" src="img/teacher(7).jpg" alt="Person's image">
                                 <div class="comment__content">
                                     <h3 class="comment__name">David Warner</h3>
                                     <h3 class="comment__titles">CEO & Founder</h3>
@@ -217,7 +243,7 @@
                             <section class="article__comments__reply-comments">
                                 <h2 class="comments__reply-comments__header">Reply Comments</h2>
                                 <div class="comments__reply-comments__name-mail">
-                                    <span class="comments__reply-comments__input comments__reply-comments__input--active">
+                                    <span class="comments__reply-comments__input">
                                         <input type="text" placeholder="Full Name Here" />
                                         <span class="material-icons">person</span>
                                     </span>
@@ -236,7 +262,7 @@
                                 </button>
                             </section>
                         </section>
-                        </div>
+                    </div>
                 </article>
 
                 <aside class="blog-details__aside">
@@ -252,7 +278,7 @@
                             <h3>Web Design</h3>
                             <span class="material-icons">chevron_right</span>
                         </div>
-                        <div class="aside__categories__category aside__categories__category--active">
+                        <div class="aside__categories__category">
                             <h3>Computer Engineering</h3>
                             <span class="material-icons">chevron_right</span>
                         </div>
@@ -277,31 +303,31 @@
                         <h3>Recent News</h3>
                         <div class="aside__recent-news__list">
                             <div class="aside__recent-news">
-                                <img src="img/classroom (2).jpg" alt="news image">
+                                <img src="img/classroom(2).jpg" alt="news image">
                                 <div>
-                                    <h4 class="aside__recent-news__name">Small Podcast Epics Ode 15 With Phile</h3>
-                                        <h4 class="aside__recent-news__author">By Silvia Hola</h3>
+                                    <h3 class="aside__recent-news__name">Small Podcast Epics Ode 15 With Phile</h3>
+                                    <h3 class="aside__recent-news__author">By Silvia Hola</h3>
                                 </div>
                             </div>
                             <div class="aside__recent-news">
-                                <img src="img/engineering (2).jpg" alt="news image">
+                                <img src="img/engineering(2).jpg" alt="news image">
                                 <div>
-                                    <h4 class="aside__recent-news__name">Small Podcast Epics Ode 15 With Phile</h3>
-                                        <h4 class="aside__recent-news__author">By Silvia Hola</h3>
+                                    <h3 class="aside__recent-news__name">Small Podcast Epics Ode 15 With Phile</h3>
+                                    <h3 class="aside__recent-news__author">By Silvia Hola</h3>
                                 </div>
                             </div>
                             <div class="aside__recent-news">
-                                <img src="img/teacher (2).jpg" alt="news image">
+                                <img src="img/teacher(2).jpg" alt="news image">
                                 <div>
-                                    <h4 class="aside__recent-news__name">Small Podcast Epics Ode 15 With Phile</h3>
-                                        <h4 class="aside__recent-news__author">By Silvia Hola</h3>
+                                    <h3 class="aside__recent-news__name">Small Podcast Epics Ode 15 With Phile</h3>
+                                    <h3 class="aside__recent-news__author">By Silvia Hola</h3>
                                 </div>
                             </div>
                             <div class="aside__recent-news">
-                                <img src="img/student (4).jpg" alt="news image">
+                                <img src="img/student(4).jpg" alt="news image">
                                 <div>
-                                    <h4 class="aside__recent-news__name">Small Podcast Epics Ode 15 With Phile</h3>
-                                        <h4 class="aside__recent-news__author">By Silvia Hola</h3>
+                                    <h3 class="aside__recent-news__name">Small Podcast Epics Ode 15 With Phile</h3>
+                                    <h3 class="aside__recent-news__author">By Silvia Hola</h3>
                                 </div>
                             </div>
                         </div>
@@ -309,12 +335,24 @@
                     <div class="b-d__aside__gallery">
                         <h3 class="aside__gallery__header">Gallery</h3>
                         <div class="aside__gallery__images">
-                            <img class="b-d__aside__gallery__image" src="img/student (3).jpg" alt="instagram image">
-                            <img class="b-d__aside__gallery__image" src="img/student (2).jpg" alt="phone image">
-                            <img class="b-d__aside__gallery__image" src="img/engineering (1).jpg" alt="instagram image">
-                            <img class="b-d__aside__gallery__image" src="img/girl-with-book.jpg" alt="phone image">
-                            <img class="b-d__aside__gallery__image" src="img/engineering (3).jpg" alt="instagram image">
-                            <img class="b-d__aside__gallery__image" src="img/cafe.jpg" alt="phone image">
+                            <a class="spotlight" href="img/student(3).jpg">
+                                <img class="b-d__aside__gallery__image" src="img/student(3).jpg" alt="Instagram image">
+                            </a>
+                            <a class="spotlight" href="img/student(2).jpg">
+                                <img class="b-d__aside__gallery__image" src="img/student(2).jpg" alt="Instagram image">
+                            </a>
+                            <a class="spotlight" href="img/engineering(1).jpg">
+                                <img class="b-d__aside__gallery__image" src="img/engineering(1).jpg" alt="Instagram image">
+                            </a>
+                            <a class="spotlight" href="img/girl-with-book.jpg">
+                                <img class="b-d__aside__gallery__image" src="img/girl-with-book.jpg" alt="Instagram image">
+                            </a>
+                            <a class="spotlight" href="img/engineering(3).jpg">
+                                <img class="b-d__aside__gallery__image" src="img/engineering(3).jpg" alt="Instagram image">
+                            </a>
+                            <a class="spotlight" href="img/cafe.jpg">
+                                <img class="b-d__aside__gallery__image" src="img/cafe.jpg" alt="Instagram image">
+                            </a>
                         </div>
                     </div>
                     <div class="b-d__aside__tags">
@@ -330,20 +368,18 @@
                     </div>
                     <img class="b-d__aside__add" src="img/add.jpg" alt="Advertisment">
                 </aside>
-                </div>
             </div>
+        </div>
     </main>
     <footer class="main-grid footer">
         <div class="main-grid__content">
             <div class="footer-top-part">
-                <!-- logo -->
                 <a href="#Home" class="nav-logo">
                     <img class="logo__img" src="icons/EduLogoWhite.png" alt="logo" />
                     <span class="logo__text">
                         <span class="logo-edu">Edu</span>Plus
                     </span>
                 </a>
-                <!-- socky -->
                 <div class="footer-socials-container">
                     <a class="footer-social" href="https://www.facebook.com/"><img src="icons/facebook_logo.png" alt="Facebook" /> Facebook
                     </a>
@@ -354,42 +390,40 @@
                 </div>
             </div>
             <div class="footer-bottom-part">
-                <button class="main-button nav-to-top"><span class="material-icons"> expand_less
-                    </span></button>
-                <!-- our courses -->
+                <button class="main-button nav-to-top" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>
+                    <span class="material-icons">expand_less</span>
+                </button>
                 <div class="footer-categories">
                     <h2>Our Courses</h2>
-                    <ul>
-                        <div>
-                            <li>Web Development</li>
-                            <li>Business Studies</li>
-                            <li>Computer Engineering</li>
-                            <li>English Learning</li>
-                            <li>Graphic Design</li>
+                    <div class="footer-categories__ul">
+                        <div class="footer-categories__part">
+                            <div class="footer-categories__part__li">Web Development</div>
+                            <div class="footer-categories__part__li">Business Studies</div>
+                            <div class="footer-categories__part__li">Computer Engineering</div>
+                            <div class="footer-categories__part__li">English Learning</div>
+                            <div class="footer-categories__part__li">Graphic Design</div>
                         </div>
-                        <div>
-                            <li>Color Comoinitions</li>
-                            <li>Software Development</li>
-                            <li>Photography</li>
-                            <li>Advance WordPress</li>
-                            <li>Basic PSD to HTML</li>
+                        <div class="footer-categories__part">
+                            <div class="footer-categories__part__li">Color Comoinitions</div>
+                            <div class="footer-categories__part__li">Software Development</div>
+                            <div class="footer-categories__part__li">Photography</div>
+                            <div class="footer-categories__part__li">Advance WordPress</div>
+                            <div class="footer-categories__part__li">Basic PSD to HTML</div>
                         </div>
-                    </ul>
+                    </div>
                 </div>
-                <!-- company -->
                 <div class="footer-company">
                     <h2>Company</h2>
-                    <ul>
-                        <div>
-                            <li>About Eduket</li>
-                            <li>Meet Advisors</li>
-                            <li>Join A Career</li>
-                            <li>Latest Courses</li>
-                            <li>Newsletters</li>
+                    <div class="footer-company__ul">
+                        <div class="footer-company__part">
+                            <div class="footer-company__part_li">About Eduket</div>
+                            <div class="footer-company__part_li">Meet Advisors</div>
+                            <div class="footer-company__part_li">Join A Career</div>
+                            <div class="footer-company__part_li">Latest Courses</div>
+                            <div class="footer-company__part_li">Newsletters</div>
                         </div>
-                    </ul>
+                    </div>
                 </div>
-                <!-- newsletters -->
                 <div class="footer-newsletters">
                     <h2>Newsletters</h2>
                     <p>
@@ -400,7 +434,6 @@
                         <button class="main-button"><span class="material-icons">east</span></button>
                     </div>
                 </div>
-                <!-- Copyright -->
             </div>
             <div class="footer-copyright">
                 <p>Copyright &copy; 2020 <span class="logo--footer"><span class="logo-edu">Edu</span>Plus</span> All Rights Reserved.</p>

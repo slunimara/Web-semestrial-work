@@ -41,6 +41,10 @@ vzhled{
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* --------------- 
   
@@ -166,7 +170,6 @@ h6 {
 
 .nav-flex--center {
     display: flex;
-    justify-content: space-between;
     width: 100%;
 }
 
@@ -193,26 +196,49 @@ nav {
     font-weight: bold;
 }
 
+nav a {
+    color: #062a35;
+}
+
 .header__navbar__flex {
     display: flex;
 }
 
-nav ul {
+.nav__ul {
     display: flex;
 }
 
-nav li {
+.nav__main-li {
     display: flex;
     align-items: center;
     padding: 1rem;
     font-size: 1rem;
     color: #062a35;
+    position: relative;
 }
 
 nav .material-icons {
     margin-left: 0.25rem;
     font-size: 0.75rem;
     font-weight: bold;
+}
+
+.nav__li__drop {
+    width: max-content;
+    padding: 1rem;
+}
+
+.nav__ul__drop {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 3rem;
+    border-top: .2rem solid #ea5822;
+}
+
+.nav__main-li:hover .nav__ul__drop {
+    display: flex;
 }
 
 .header-socials {
@@ -309,8 +335,6 @@ nav .material-icons {
     border-bottom: 1px solid var(--color-5);
 }
 
-.nav-to-top {}
-
 .footer-top-part .logo__text {
     font-size: 2rem;
     color: white;
@@ -347,12 +371,12 @@ nav .material-icons {
     width: 100%;
 }
 
-.footer-categories ul {
+.footer-categories__ul {
     display: flex;
     width: max-content;
 }
 
-.footer-categories div {
+.footer-categories__part {
     display: grid;
     margin-right: 1rem;
 }
@@ -361,7 +385,7 @@ nav .material-icons {
     margin-bottom: 1rem;
 }
 
-.footer-categories ul li {
+.footer-categories__part__li {
     margin: 0.4rem 0;
     color: var(--color-4)
 }
@@ -370,11 +394,11 @@ nav .material-icons {
     color: white;
 }
 
-.footer-company ul {
+.footer-company__ul {
     display: flex;
 }
 
-.footer-company div {
+.footer-company__part {
     display: grid;
 }
 
@@ -382,7 +406,7 @@ nav .material-icons {
     margin-bottom: 1rem;
 }
 
-.footer-company ul li {
+.footer-company__part_li {
     margin: 0.4rem 0;
     color: var(--color-4)
 }
@@ -442,7 +466,7 @@ nav .material-icons {
     nav {
         margin: 0 1rem;
     }
-    nav li {
+    .nav__main-li {
         padding: 0.5rem;
     }
     .header-socials__apps {
@@ -525,10 +549,10 @@ nav .material-icons {
     nav {
         align-self: start;
     }
-    nav ul {
+    .nav__ul {
         flex-direction: column;
     }
-    nav li .material-icons {
+    .nav__main-li .material-icons {
         display: none;
     }
     .page-title__header {

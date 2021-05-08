@@ -1,19 +1,9 @@
-:root {
-    --color-1: #ea5822;
-    --color-2: #eaf4f7;
-    --color-3: #062a35;
-    --color-4: #b7b7b7;
-    --color-5: #324d56;
-    --color-6: #0d3541;
-    --color-7: #427b8e;
-}
-
 .flex-items {
     display: flex;
 }
 
 .color-2 {
-    background: var(--color-2);
+    background: #eaf4f7;
 }
 
 .tag {
@@ -38,14 +28,14 @@ Texty a nadpisy
 }
 
 .sub-header {
-    color: var(--color-1);
+    color: #ea5822;
     font-size: 1rem;
     text-align: center;
 }
 
 .main-header {
     margin: 0.25em 0;
-    color: var(--color-3);
+    color: #062a35;
     font-size: 2.5rem;
     text-align: center;
 }
@@ -82,8 +72,6 @@ instructor
     margin-right: 10%;
 }
 
-.instructor__socials {}
-
 .instructor-details__profile {
     grid-column-start: 1;
     grid-column-end: 5;
@@ -95,7 +83,7 @@ instructor
     justify-content: center;
     width: 2rem;
     height: 2rem;
-    background-color: var(--color-1);
+    background-color: #ea5822;
     position: absolute;
     top: 11rem;
     right: 1rem;
@@ -119,20 +107,20 @@ instructor
 
 .instructor__type {
     font-size: 1rem;
-    color: var(--color-4);
+    color: #b7b7b7;
     padding-bottom: 1rem;
 }
 
 .instructor__courses {
     display: flex;
     padding-top: 1rem;
-    border-top: 1px solid var(--color-4);
+    border-top: 1px solid #b7b7b7;
     font-size: 1rem;
 }
 
 .instructor__courses .material-icons {
     padding-right: 0.2rem;
-    color: var(--color-1);
+    color: #ea5822;
 }
 
 .instructor-details__about {
@@ -148,7 +136,7 @@ instructor
 }
 
 .instructor-details__about__paragraph {
-    color: var(--color-4);
+    color: #b7b7b7;
 }
 
 .instructor-details__tip-box {
@@ -159,34 +147,34 @@ instructor
 
 .instructor-details__tip-box__tip .material-icons {
     font-size: 3rem;
-    color: var(--color-1);
+    color: #ea5822;
     margin-right: 2rem;
 }
 
 .instructor-details__tip-box__tip__head {
     font-weight: bold;
     font-size: 2rem;
-    color: var(--color-1);
+    color: #ea5822;
 }
 
 .instructor-details__tip-box__tip__desc {
-    color: var(--color-4);
+    color: #b7b7b7;
     font-size: 1rem;
 }
 
 .instructor-details__tip-box__tip p {
-    color: var(--color-4);
+    color: #b7b7b7;
 }
 
 .instructor-details__tip-box__tip:last-child {
     padding-left: 3rem;
     border-left: 1px solid;
-    border-color: var(--color-4);
+    border-color: #b7b7b7;
 }
 
 .instructor__courses .material-icons {
     padding-right: 0.2rem;
-    color: var(--color-1);
+    color: #ea5822;
 }
 
 .instructor-details__certification {
@@ -202,7 +190,7 @@ instructor
 }
 
 .instructor-details__certification__paragraph {
-    color: var(--color-4);
+    color: #b7b7b7;
 }
 
 .instructor-details__certification__list {
@@ -232,12 +220,12 @@ instructor
 
 .instructor-details__education__tip-box__tip .material-icons {
     font-size: 3rem;
-    color: var(--color-1);
+    color: #ea5822;
     margin-right: 2rem;
 }
 
 .instructor-details__education__tip p {
-    color: var(--color-4);
+    color: #b7b7b7;
 }
 
 .tip-box__tip__head {
@@ -246,7 +234,7 @@ instructor
 
 .tip-box__tip__desc {
     font-size: 1rem;
-    color: var(--color-4);
+    color: #b7b7b7;
 }
 
 .instructor-details__education-experience__header {
@@ -301,7 +289,7 @@ available courses
 }
 
 .available-courses__list__item--active {
-    background-color: var(--color-1);
+    background-color: #ea5822;
     color: white;
 }
 
@@ -381,7 +369,7 @@ available courses
     font-weight: bold;
     line-height: 3rem;
     text-align: center;
-    background: var(--color-1);
+    background: #ea5822;
     color: #fff;
 }
 
@@ -404,7 +392,7 @@ available courses
 
 .a-c__content__special .material-icons {
     font-size: 1.2rem;
-    color: var(--color-1);
+    color: #ea5822;
 }
 
 .a-c__content__heading {
@@ -413,7 +401,7 @@ available courses
     border-bottom: 1px solid grey;
     font-size: 1.2rem;
     font-weight: bold;
-    color: var(--color-3);
+    color: #062a35;
 }
 
 .a-c__content_info {
@@ -426,7 +414,7 @@ available courses
 .a-c__content_info .material-icons {
     margin-right: .25em;
     vertical-align: middle;
-    color: var(--color-1);
+    color: #ea5822;
 }
 
 @media only screen and (max-width: 1500px) {

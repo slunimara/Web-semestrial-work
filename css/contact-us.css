@@ -1,19 +1,9 @@
-:root {
-    --color-1: #ea5822;
-    --color-2: #eaf4f7;
-    --color-3: #062a35;
-    --color-4: #b7b7b7;
-    --color-5: #324d56;
-    --color-6: #0d3541;
-    --color-7: #427b8e;
-}
-
 .flex-items {
     display: flex;
 }
 
 .color-2 {
-    background: var(--color-2);
+    background: #eaf4f7;
 }
 
 .main-hgroup {
@@ -21,35 +11,16 @@
 }
 
 .sub-header {
-    color: var(--color-1);
+    color: #ea5822;
     font-size: 1rem;
     text-align: center;
 }
 
 .main-header {
     margin: 0;
-    color: var(--color-3);
+    color: #062a35;
     font-size: 2.5rem;
     text-align: center;
-}
-
-
-/* --------------- 
-  
-  Header
-  
-   ---------------*/
-
-header {
-    position: unset;
-    padding: 1rem 0;
-    background: var(--color-2);
-}
-
-.nav-flex {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
 }
 
 
@@ -80,7 +51,7 @@ header {
 .g-i-t__description {
     /* padding-left: 2rem; */
     text-align: justify;
-    color: var(--color-4);
+    color: #b7b7b7;
 }
 
 .g-i-t__tip-box {
@@ -105,7 +76,7 @@ header {
     border-radius: 100%;
     font-size: 3rem;
     color: #fff;
-    background: var(--color-1);
+    background: #ea5822;
 }
 
 .tip-box__tip__name {
@@ -118,7 +89,7 @@ header {
 }
 
 .g-i-t__tip-box__tip p {
-    color: var(--color-4);
+    color: #b7b7b7;
 }
 
 .get-in-touch__image {
@@ -134,7 +105,7 @@ header {
     width: 2rem;
     margin: .5rem;
     border-radius: 100%;
-    background: var(--color-2);
+    background: #eaf4f7;
 }
 
 .get-in-touch__icons--active {
@@ -166,7 +137,7 @@ header {
 }
 
 .leave-message__input .material-icons {
-    color: var(--color-1);
+    color: #ea5822;
 }
 
 .leave-message__name-mail {
@@ -188,7 +159,7 @@ header {
 .leave-message .main-button {
     width: 60%;
     justify-content: center;
-    background: var(--color-1);
+    background: #ea5822;
 }
 
 @media only screen and (max-width: 1200px) {
