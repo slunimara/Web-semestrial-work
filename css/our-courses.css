@@ -223,6 +223,30 @@
     color: white;
 }
 
+.instructor__more-info__ul {
+    width: 2rem;
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    bottom: 2rem;
+    align-items: center;
+}
+
+.instructor__more-info:hover .instructor__more-info__ul {
+    display: flex;
+}
+
+.instructor__more-info__ul li {
+    height: 2rem;
+}
+
+.instructor__more-info__ul img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: .2rem;
+}
+
 .instructor__description {
     padding: 1rem;
 }
@@ -327,7 +351,7 @@
     background: #0d3541;
 }
 
-.n-b__news__button--colored {
+.n-b__news__button:hover {
     background: #ea5822;
 }
 

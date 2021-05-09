@@ -247,6 +247,30 @@ expert instructors
     color: white;
 }
 
+.instructor__more-info__ul {
+    width: 2rem;
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    bottom: 2rem;
+    align-items: center;
+}
+
+.instructor__more-info:hover .instructor__more-info__ul {
+    display: flex;
+}
+
+.instructor__more-info__ul li {
+    height: 2rem;
+}
+
+.instructor__more-info__ul img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: .2rem;
+}
+
 .instructor__description {
     padding: 1rem;
 }
@@ -301,6 +325,7 @@ expert instructors
 
 .students-feedback__citate {
     width: 90%;
+    height: 35rem;
     z-index: 1;
     position: relative;
     box-sizing: border-box;
@@ -310,7 +335,7 @@ expert instructors
 
 .s-f__citate__box-copy {
     width: 100%;
-    height: 100%;
+    height: 35rem;
     z-index: -1;
     position: absolute;
     top: 1em;
@@ -320,13 +345,13 @@ expert instructors
 
 .s-f__citate__box-move {
     position: relative;
+    height: 100%;
     top: 1em;
     left: 1em;
 }
 
 .s-f__citate__main-text {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+    font-size: 135%;
 }
 
 .s-f__citate__main-description {
@@ -337,6 +362,8 @@ expert instructors
 .s-f__citate__autor {
     display: flex;
     align-items: center;
+    position: absolute;
+    bottom: 4rem;
 }
 
 .s-f__citate__autor img {
@@ -344,6 +371,7 @@ expert instructors
     height: 2.5rem;
     margin: 1rem;
     border-radius: 100%;
+    object-fit: cover;
 }
 
 .s-f__citate__autor__name {
@@ -358,6 +386,8 @@ expert instructors
 
 .s-f__citate__buttons {
     display: flex;
+    position: absolute;
+    bottom: 1rem;
 }
 
 .s-f__citate__button {
@@ -376,8 +406,8 @@ expert instructors
     position: absolute;
     bottom: 0;
     right: 0;
-    font-size: 11em;
     color: #ea5822;
+    width: 9rem;
 }
 
 .students-feedback__pictures {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="css/shared.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <script src="javascript.js"></script>
+    <script src="library/spotlight.bundle.js"></script>
 </head>
 
 <body>
@@ -106,9 +108,7 @@
         <article class="main-grid welcome">
             <div class="main-grid__content welcome-content">
                 <div class="welcome-content-left">
-                    <strong>
-                        <h1>■ ■ ■ Welcome to EduPlus</h1>
-                    </strong>
+                    <h1>■ ■ ■ Welcome to EduPlus</h1>
                     <h2>More than 1200 Online Courses</h2>
                     <div class="welcome-course-search">
                         <input type="text" placeholder="Search Courses" />
@@ -161,19 +161,18 @@
                     </div>
                 </div>
             </div>
+            <img class="welcome-background" src="./img/background.png" alt="Background">
+            <img class="girl-background" src="./img/girl.png" alt="Girl with a book">
 
-            <img class="girl-background" src="./img/girl.png" alt="girl with a book">
         </article>
 
         <!-- course categories -->
         <section class="course-categories main-grid" id="course_categories">
             <div class="main-grid__content">
-                <hroup>
-                    <div class="main-hgroup">
-                        <h2 class="sub-header">■ ■ ■ Popular Categories ■ ■ ■</h2>
-                        <h2 class="main-header"><strong>Course Categories</strong></h2>
-                    </div>
-                </hroup>
+                <div class="main-hgroup">
+                    <h2 class="sub-header">■ ■ ■ Popular Categories ■ ■ ■</h2>
+                    <h2 class="main-header"><strong>Course Categories</strong></h2>
+                </div>
 
                 <div class="course-categories-courses">
                     <section class="course-category">
@@ -194,18 +193,18 @@
                         <img src="img/marketing.jpg" alt="Marketing meeting" />
                         <div class="course-category-content">
                             <h3 class="course-category__header">Bussiness Studies</h3>
-                            <h3 class="course-category__description">Finance Studies/h3>
-                                <ul>
-                                    <li><span class="material-icons">groups</span><span class="course-category-content__groups">250</span></li>
-                                    <li>
-                                        <span class="material-icons">library_books</span><span class="course-category-content__courses">800+ Courses</span>
-                                    </li>
-                                </ul>
+                            <h3 class="course-category__description">Finance Studies</h3>
+                            <ul>
+                                <li><span class="material-icons">groups</span><span class="course-category-content__groups">250</span></li>
+                                <li>
+                                    <span class="material-icons">library_books</span><span class="course-category-content__courses">800+ Courses</span>
+                                </li>
+                            </ul>
                         </div>
                     </section>
 
                     <section class="course-category">
-                        <img src="img/teacher (3).jpg" alt="Web Development Course" />
+                        <img src="img/teacher(3).jpg" alt="Web Development Course" />
                         <div class="course-category-content">
                             <h3 class="course-category__header">Web Development</h3>
                             <h3 class="course-category__description">Web Course</h3>
@@ -219,7 +218,7 @@
                     </section>
 
                     <section class="course-category">
-                        <img src="img/engineering (1).jpg" alt="Product Enginering" />
+                        <img src="img/engineering(1).jpg" alt="Product Enginering" />
                         <div class="course-category-content">
                             <h3 class="course-category__header">Product Enginering</h3>
                             <h3 class="course-category__description">WEb Desing Enginering</h3>
@@ -247,7 +246,7 @@
                     </section>
 
                     <section class="course-category">
-                        <img src="img/study (3).jpg" alt="Medical & Health" />
+                        <img src="img/study(3).jpg" alt="Medical & Health" />
                         <div class="course-category-content">
                             <h3 class="course-category__header">Medical & Health</h3>
                             <h3 class="course-category__description">Medical & Health Course</h3>
@@ -294,20 +293,20 @@
         <!-- available courses-->
         <article class="available-courses main-grid" id="available_courses">
             <div class="main-grid__content">
-                <hroup>
-                    <div class="main-hgroup">
-                        <h2 class="sub-header">■ ■ ■ Popular Courses ■ ■ ■</h2>
-                        <h2 class="main-header"><strong>Available Courses</strong></h2>
-                    </div>
-                </hroup>
+
+                <div class="main-hgroup">
+                    <h2 class="sub-header">■ ■ ■ Popular Courses ■ ■ ■</h2>
+                    <h2 class="main-header"><strong>Available Courses</strong></h2>
+                </div>
+
 
                 <div class="available-courses-grid">
                     <section class="available-course">
                         <div class="available-course__image-part">
-                            <img class="a-c__image-part__bg-image" src="img/study (3).jpg" alt="Teacher Picture" />
+                            <img class="a-c__image-part__bg-image" src="img/study(3).jpg" alt="Teacher Picture" />
                             <div class="a-c__image-part__content">
                                 <div class="a-c__image-part__content__user">
-                                    <img src="img/teacher (3).jpg" alt="">
+                                    <img src="img/teacher(3).jpg" alt="">
                                     <h3>Warner</h3>
                                 </div>
                                 <h3 class="a-c__image-part__content__price">$59.95</h3>
@@ -334,10 +333,10 @@
                     </section>
                     <section class="available-course">
                         <div class="available-course__image-part">
-                            <img class="a-c__image-part__bg-image" src="img/study (2).jpg" alt="Teacher Picture" />
+                            <img class="a-c__image-part__bg-image" src="img/study(2).jpg" alt="Teacher Picture" />
                             <div class="a-c__image-part__content">
                                 <div class="a-c__image-part__content__user">
-                                    <img src="img/teacher (6).jpg" alt="">
+                                    <img src="img/teacher(6).jpg" alt="">
                                     <h3>Warner</h3>
                                 </div>
                                 <h3 class="a-c__image-part__content__price">$59.95</h3>
@@ -364,10 +363,10 @@
                     </section>
                     <section class="available-course">
                         <div class="available-course__image-part">
-                            <img class="a-c__image-part__bg-image" src="img/study (1).jpg" alt="Teacher Picture" />
+                            <img class="a-c__image-part__bg-image" src="img/study(1).jpg" alt="Teacher Picture" />
                             <div class="a-c__image-part__content">
                                 <div class="a-c__image-part__content__user">
-                                    <img src="img/teacher (4).jpg" alt="">
+                                    <img src="img/teacher(4).jpg" alt="">
                                     <h3>Warner</h3>
                                 </div>
                                 <h3 class="a-c__image-part__content__price">$59.95</h3>
@@ -394,52 +393,52 @@
                     </section>
                 </div>
 
-                <a class="main-button available-courses__button" href=""><span>View All Courses</span><span
-                        class="material-icons">east</span></a>
+                <a class="main-button available-courses__button" href="courses-detail.html"><span>View All
+                        Courses</span><span class="material-icons">east</span></a>
             </div>
         </article>
 
         <!-- gallery -->
         <section class="gallery main-grid" id="campus_gallery">
             <div class="main-grid__content">
-                <hroup>
-                    <div class="main-hgroup">
-                        <h2 class="sub-header">■ ■ ■ Photo & Album ■ ■ ■</h2>
-                        <h2 class="main-header"><strong>Campus Gallery</strong></h2>
-                    </div>
-                </hroup>
 
-                <hroup>
-                    <div class="gallery-hgroup">
-                        <button>Show All</button>
-                        <button>University</button>
-                        <button>Group Study</button>
-                        <button>Awards</button>
-                        <button>Students</button>
-                        <button>Teachers</button>
-                        <button>Campus</button>
-                    </div>
-                </hroup>
+                <div class="main-hgroup">
+                    <h2 class="sub-header">■ ■ ■ Photo & Album ■ ■ ■</h2>
+                    <h2 class="main-header"><strong>Campus Gallery</strong></h2>
+                </div>
+
+
+
+                <div class="gallery-hgroup">
+                    <button>Show All</button>
+                    <button>University</button>
+                    <button>Group Study</button>
+                    <button>Awards</button>
+                    <button>Students</button>
+                    <button>Teachers</button>
+                    <button>Campus</button>
+                </div>
+
 
                 <div class="gallery-photos">
-                    <div class="gallery-photos__image">
-                        <img src="img/classroom (2).jpg" alt="Gallery photo">
-                    </div>
-                    <div class="gallery-photos__image">
-                        <img src="img/engineering (1).jpg" alt="Gallery photo">
-                    </div>
-                    <div class="gallery-photos__image">
+                    <a class="gallery-photos__image spotlight" href="img/classroom(2).jpg">
+                        <img src="img/classroom(2).jpg" alt="Gallery photo">
+                    </a>
+                    <a class="gallery-photos__image spotlight" href="img/engineering(1).jpg">
+                        <img src="img/engineering(1).jpg" alt="Gallery photo">
+                    </a>
+                    <a class="gallery-photos__image spotlight" href="img/graduation.jpg">
                         <img src="img/graduation.jpg" alt="Gallery photo">
-                    </div>
-                    <div class="gallery-photos__image">
+                    </a>
+                    <a class="gallery-photos__image spotlight" href="img/girl-with-book.jpg">
                         <img src="img/girl-with-book.jpg" alt="Gallery photo">
-                    </div>
-                    <div class="gallery-photos__image">
-                        <img src="img/photographer.jpg" alt="Gallery photo">
-                    </div>
-                    <div class="gallery-photos__image">
-                        <img src="img/engineering (3).jpg" alt="Gallery photo">
-                    </div>
+                    </a>
+                    <a class="gallery-photos__image spotlight" href="img/cafe.jpg">
+                        <img src="img/cafe.jpg" alt="Gallery photo">
+                    </a>
+                    <a class="gallery-photos__image spotlight" href="img/engineering(3).jpg">
+                        <img src="img/engineering(3).jpg" alt="Gallery photo">
+                    </a>
                 </div>
             </div>
         </section>
@@ -447,19 +446,30 @@
         <!-- instructors -->
         <section class="expert-instructors main-grid" id="expert_instructors">
             <div class="main-grid__content">
-                <hroup>
-                    <div class="main-hgroup">
-                        <h2 class="sub-header">■ ■ ■ Team Members ■ ■ ■</h2>
-                        <h2 class="main-header"><strong>Expert Instructor</strong></h2>
-                    </div>
-                </hroup>
+
+                <div class="main-hgroup">
+                    <h2 class="sub-header">■ ■ ■ Team Members ■ ■ ■</h2>
+                    <h2 class="main-header"><strong>Expert Instructor</strong></h2>
+                </div>
+
 
                 <div class="expert-instructors__instructors">
                     <div class="instructors__instructor">
                         <div class="instructor__more-info">
                             <span class="material-icons">add</span>
+                            <ul class="instructor__more-info__ul">
+                                <li>
+                                    <a href=""><img src="icons/facebook_logo_blue.png" alt="Facebook"></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="icons/twitter_logo.png" alt="Twitter"></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="icons/instagram_logo.png" alt="Instagram"></a>
+                                </li>
+                            </ul>
                         </div>
-                        <img class="instructor__image" src="img/teacher (2).jpg" alt="Teacher photo">
+                        <img class="instructor__image" src="img/teacher(2).jpg" alt="Teacher photo">
                         <div class="instructor__description">
                             <h3 class="instructor__name">Somalia D Silva</h3>
                             <h3 class="instructor__type">Math Teacher</h3>
@@ -472,8 +482,19 @@
                     <div class="instructors__instructor">
                         <div class="instructor__more-info">
                             <span class="material-icons">add</span>
+                            <ul class="instructor__more-info__ul">
+                                <li>
+                                    <a href=""><img src="icons/facebook_logo_blue.png" alt="Facebook"></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="icons/twitter_logo.png" alt="Twitter"></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="icons/instagram_logo.png" alt="Instagram"></a>
+                                </li>
+                            </ul>
                         </div>
-                        <img class="instructor__image" src="img/teacher (5).jpg" alt="Teacher photo">
+                        <img class="instructor__image" src="img/teacher(5).jpg" alt="Teacher photo">
                         <div class="instructor__description">
                             <h3 class="instructor__name">Margot Rob </h3>
                             <h3 class="instructor__type">Math Teacher</h3>
@@ -486,8 +507,19 @@
                     <div class="instructors__instructor">
                         <div class="instructor__more-info">
                             <span class="material-icons">add</span>
+                            <ul class="instructor__more-info__ul">
+                                <li>
+                                    <a href=""><img src="icons/facebook_logo_blue.png" alt="Facebook"></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="icons/twitter_logo.png" alt="Twitter"></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="icons/instagram_logo.png" alt="Instagram"></a>
+                                </li>
+                            </ul>
                         </div>
-                        <img class="instructor__image" src="img/teacher (6).jpg" alt="Teacher photo">
+                        <img class="instructor__image" src="img/teacher(6).jpg" alt="Teacher photo">
                         <div class="instructor__description">
                             <h3 class="instructor__name">Brad Pi</h3>
                             <h3 class="instructor__type">Math Teacher</h3>
@@ -500,8 +532,19 @@
                     <div class="instructors__instructor">
                         <div class="instructor__more-info">
                             <span class="material-icons">add</span>
+                            <ul class="instructor__more-info__ul">
+                                <li>
+                                    <a href=""><img src="icons/facebook_logo_blue.png" alt="Facebook"></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="icons/twitter_logo.png" alt="Twitter"></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="icons/instagram_logo.png" alt="Instagram"></a>
+                                </li>
+                            </ul>
                         </div>
-                        <img class="instructor__image" src="img/teacher (1).jpg" alt="Teacher photo">
+                        <img class="instructor__image" src="img/teacher(1).jpg" alt="Teacher photo">
                         <div class="instructor__description">
                             <h3 class="instructor__name">Leonardo Cap</h3>
                             <h3 class="instructor__type">Math Teacher</h3>
@@ -517,12 +560,12 @@
         <!-- events -->
         <article class="upcoming-events main-grid" id="upcoming_events">
             <div class="main-grid__content">
-                <hroup>
-                    <div class="main-hgroup">
-                        <h2 class="sub-header">■ ■ ■ Latest Events ■ ■ ■</h2>
-                        <h2 class="main-header"><strong>Upcoming Events</strong></h2>
-                    </div>
-                </hroup>
+
+                <div class="main-hgroup">
+                    <h2 class="sub-header">■ ■ ■ Latest Events ■ ■ ■</h2>
+                    <h2 class="main-header"><strong>Upcoming Events</strong></h2>
+                </div>
+
 
                 <div class="upcoming-events__grid">
                     <section class="upcoming-event-big">
@@ -538,7 +581,7 @@
                             <p class="u-e-b__content__paragraph">Duis viverra diam non justo. Integer tempor. Nunc dapibus tortor vel mi dapibus sollicitudin. Fusce suscipit libero eget elit. Pellentesque habitant morbi tristique.
                             </p>
                             <button class="main-button u-e-b__content__button-join">
-                                join event
+                                <a href="events-detail.html">join event</a>
                                 <span class="material-icons">east</span>
                             </button>
                         </div>
@@ -554,13 +597,13 @@
                                 </ul>
                                 <h3 class="u-e-s__content__heading">Annual Conference 2020</h3>
                                 <button class="main-button u-e-s__content__button-join">
-                                    join event
+                                    <a href="events-detail.html">join event</a>
                                     <span class="material-icons">east</span>
                                 </button>
                             </div>
                         </section>
                         <section class="upcoming-event-small">
-                            <img src="img/study (1).jpg" alt="upcoming event picture">
+                            <img src="img/study(1).jpg" alt="upcoming event picture">
                             <div class="u-e__price">$20</div>
                             <div class="upcoming-event-small__content">
                                 <ul class="u-e__dates">
@@ -569,7 +612,7 @@
                                 </ul>
                                 <h3 class="u-e-s__content__heading">Annual Conference 2020</h3>
                                 <button class="main-button u-e-s__content__button-join">
-                                    join event
+                                    <a href="events-detail.html">join event</a>
                                     <span class="material-icons">east</span>
                                 </button>
                             </div>
@@ -577,7 +620,7 @@
                     </div>
                 </div>
 
-                <a class="main-button upcoming-event__button" href="">
+                <a class="main-button upcoming-event__button" href="events-detail.html">
                     <span>View All Events</span>
                     <span class="material-icons">east</span>
                 </a>
@@ -585,14 +628,12 @@
         </article>
 
         <!-- recom -->
-        <article class="students-feedback main-grid" id="students_say">
+        <article class="students-feedback main-grid">
             <div class="main-grid__content">
-                <hroup>
-                    <div class="main-hgroup">
-                        <h2 class="sub-header">■ ■ ■ Students Feedback ■ ■ ■</h2>
-                        <h2 class="main-header"><strong>What Our Students Say</strong></h2>
-                    </div>
-                </hroup>
+                <div class="main-hgroup">
+                    <h2 class="sub-header">■ ■ ■ Students Feedback ■ ■ ■</h2>
+                    <h2 class="main-header"><strong>What Our Students Say</strong></h2>
+                </div>
 
                 <div class="students-feedback__flex">
                     <div class="students-feedback__citate">
@@ -602,17 +643,17 @@
                                 culpa qui officia deserunt mollit anim id est laborum.</p>
                             <p class="s-f__citate__main-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In enim a arcu imperdiet malesuada. Fusce consectetuer risus a nunc.</p>
                             <div class="s-f__citate__autor">
-                                <img src="img/teacher (4).jpg" alt="Autor's photo">
+                                <img class="s-f__citate__autor__image" src="img/teacher(4).jpg" alt="Autor's photo">
                                 <div>
                                     <h3 class="s-f__citate__autor__name">Sousa Fernandes</h3>
                                     <h3 class="s-f__citate__autor__description">CEO & Founder</h3>
                                 </div>
                             </div>
                             <div class="s-f__citate__buttons">
-                                <button class="main-button s-f__citate__button">
+                                <button class="main-button s-f__citate__button" onclick="changeStatus(-1)">
                                     <span class="material-icons">west</span>
                                 </button>
-                                <button class="main-button s-f__citate__button s-f__citate__button--active">
+                                <button class="main-button s-f__citate__button" onclick="changeStatus(1)">
                                     <span class="material-icons">east</span>
                                 </button>
                             </div>
@@ -627,20 +668,20 @@
         </article>
 
         <!-- become an instructor -->
-        <article class="become_instructor main-grid" id="become_an_instructor">
+        <div class="become_instructor main-grid" id="become_an_instructor">
             <div class="main-grid__content">
                 <div class="become_instructor__flex">
                     <div class="become_instructor__image-box">
                         <img class="become_instructor__image" src="img/teachers-meeting.jpg" alt="Group of instructors">
-                        <img class="become_instructor__image-2" src="img/teacher (3).jpg" alt="Instructor">
+                        <img class="become_instructor__image-2" src="img/teacher(4).jpg" alt="Instructor">
                     </div>
                     <section class="become_instructor__section">
-                        <hroup>
-                            <div class="main-hgroup">
-                                <h2 class="sub-header">■ ■ ■ Build A Career</h2>
-                                <h2 class="main-header"><strong>Become an instructor</strong></h2>
-                            </div>
-                        </hroup>
+
+                        <div class="main-hgroup">
+                            <h2 class="sub-header">■ ■ ■ Build A Career</h2>
+                            <h2 class="main-header"><strong>Become an instructor</strong></h2>
+                        </div>
+
                         <p class="b-i__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In enim a arcu imperdiet malesuada. Fusce consectetuer risus a nunc.</p>
                         <div class="b-i__tip-box">
                             <div class="b-i__tip-box__tip">
@@ -666,20 +707,20 @@
                     </section>
                 </div>
             </div>
-        </article>
+        </div>
 
         <!-- news blog -->
         <article class="news-blog main-grid" id="lastest_news">
-            <hroup>
-                <div class="main-hgroup">
-                    <h2 class="sub-header">■ ■ ■ Articles & Tips ■ ■ ■</h2>
-                    <h2 class="main-header"><strong>Lastest News & Blog</strong></h2>
-                </div>
-            </hroup>
+
+            <div class="main-hgroup">
+                <h2 class="sub-header">■ ■ ■ Articles & Tips ■ ■ ■</h2>
+                <h2 class="main-header"><strong>Lastest News & Blog</strong></h2>
+            </div>
+
 
             <div class="news-blog__flex">
                 <section class="news-blog__news">
-                    <img class="n-b__news__main-image" src="img/teacher (5).jpg" alt="Gilr with a book.">
+                    <img class="n-b__news__main-image" src="img/teacher(5).jpg" alt="Gilr with a book.">
                     <div class="n-b__news__content">
                         <ul class="n-b__news__dates">
                             <li><span class="material-icons">date_range</span>25 nov 2020</li>
@@ -688,14 +729,14 @@
 
                         <h3 class="n-b__news__heading">Learning Resources in Challenging Times Online Workshop</h3>
                         <div class="n-b__news__user">
-                            <img src="img/teacher (2).jpg" class="n-b__news__user__photo" alt="Autor's image">
+                            <img src="img/teacher(2).jpg" class="n-b__news__user__photo" alt="Autor's image">
                             <h4 class="n-b__news__user__name">David Simala</h4>
                         </div>
                         <button class="main-button n-b__news__button"><span class="material-icons">east</span></button>
                     </div>
                 </section>
                 <section class="news-blog__news">
-                    <img class="n-b__news__main-image" src="img/study (2).jpg" alt="Gilr with a book.">
+                    <img class="n-b__news__main-image" src="img/study(2).jpg" alt="Gilr with a book.">
                     <div class="n-b__news__content">
                         <ul class="n-b__news__dates">
                             <li><span class="material-icons">date_range</span>25 nov 2020</li>
@@ -704,15 +745,14 @@
 
                         <h3 class="n-b__news__heading">Learning Resources in Challenging Times Online Workshop</h3>
                         <div class="n-b__news__user">
-                            <img src="img/teacher (5).jpg" class="n-b__news__user__photo" alt="Autor's image">
+                            <img src="img/teacher(5).jpg" class="n-b__news__user__photo" alt="Autor's image">
                             <h4 class="n-b__news__user__name">David Simala</h4>
                         </div>
-                        <button class="main-button n-b__news__button n-b__news__button--colored"><span
-                                class="material-icons">east</span></button>
+                        <button class="main-button n-b__news__button"><span class="material-icons">east</span></button>
                     </div>
                 </section>
                 <section class="news-blog__news">
-                    <img class="n-b__news__main-image" src="img/student (4).jpg" alt="Gilr with a book.">
+                    <img class="n-b__news__main-image" src="img/student(4).jpg" alt="Gilr with a book.">
                     <div class="n-b__news__content">
                         <ul class="n-b__news__dates">
                             <li><span class="material-icons">date_range</span>25 nov 2020</li>
@@ -721,7 +761,7 @@
 
                         <h3 class="n-b__news__heading">Learning Resources in Challenging Times Online Workshop</h3>
                         <div class="n-b__news__user">
-                            <img src="img/teacher (2).jpg" class="n-b__news__user__photo" alt="Autor's image">
+                            <img src="img/teacher(2).jpg" class="n-b__news__user__photo" alt="Autor's image">
                             <h4 class="n-b__news__user__name">David Simala</h4>
                         </div>
                         <button class="main-button n-b__news__button"><span class="material-icons">east</span></button>
