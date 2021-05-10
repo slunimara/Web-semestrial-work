@@ -130,6 +130,7 @@ FAQ Content
 
 .faq_question__header {
     font-weight: bold;
+    user-select: none;
 }
 
 .faq_question__header--active {
@@ -140,11 +141,13 @@ FAQ Content
     font-size: .85rem;
     line-height: 1.25rem;
     color: #b7b7b7;
+    display: none;
 }
 
 .faq_question .material-icons {
     font-weight: bold;
     color: #ea5822;
+    user-select: none;
 }
 
 

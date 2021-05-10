@@ -101,7 +101,8 @@
 }
 
 .e-d__article__devided__img {
-    width: 40%;
+    width: 30rem;
+    height: 30rem;
     margin-left: 10%;
 }
 
@@ -229,7 +230,8 @@
         flex-direction: column;
     }
     .e-d__article__devided__img {
-        width: 90%;
+        width: 40rem;
+        height: 40rem;
         margin: 2rem auto;
     }
     .upcoming-event__container {

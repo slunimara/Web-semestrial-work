@@ -752,7 +752,7 @@ h1 {
     bottom: 0;
     right: 0;
     color: #ea5822;
-    width: 9rem;
+    width: 7rem;
 }
 
 .students-feedback__pictures {
@@ -944,6 +944,16 @@ h1 {
     .girl-background {
         height: 80%;
     }
+    /*
+        What Our Students Say
+    */
+    .students-feedback__flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .students-feedback__pictures img {
+        margin-top: 4rem;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -998,16 +1008,6 @@ h1 {
     .upcoming-event__container {
         grid-column-start: 1;
         grid-column-end: 13;
-    }
-    /*
-        What Our Students Say
-    */
-    .students-feedback__flex {
-        display: flex;
-        flex-direction: column;
-    }
-    .students-feedback__pictures img {
-        margin-top: 4rem;
     }
     /*
         Become an instructor

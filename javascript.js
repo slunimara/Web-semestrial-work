@@ -66,3 +66,39 @@ function changeCitateContent(id) {
     autorName.innerHTML = commentArray[id].autor;
     autorImage.src = getImgPath(autorImage) + '/' + commentArray[id].img + ".jpg";
 }
+
+function questions(element) {
+    if (element.classList.contains("faq_question--active")) {
+        element.classList.remove("faq_question--active");
+
+        let icon = element.getElementsByClassName("material-icons")[0];
+        icon.innerHTML = "chevron_right";
+
+        if (element.getElementsByClassName("faq_question__content__container").length < 1) {
+            let paragraph = element.getElementsByClassName("faq_question__paragraph")[0];
+            paragraph.style.display = "none";
+
+            let header = element.getElementsByClassName("faq_question__header")[0];
+            header.classList.remove("faq_question__header--active");
+        } else {
+            let div = element.getElementsByClassName("faq_question__content__container")[0];
+            div.style.display = "none";
+        }
+    } else {
+        element.classList.add("faq_question--active");
+
+        let icon = element.getElementsByClassName("material-icons")[0];
+        icon.innerHTML = "expand_more";
+
+        if (element.getElementsByClassName("faq_question__content__container").length < 1) {
+            let paragraph = element.getElementsByClassName("faq_question__paragraph")[0];
+            paragraph.style.display = "block";
+
+            let header = element.getElementsByClassName("faq_question__header")[0];
+            header.classList.add("faq_question__header--active");
+        } else {
+            let div = element.getElementsByClassName("faq_question__content__container")[0];
+            div.style.display = "flex";
+        }
+    }
+}
