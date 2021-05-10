@@ -9,25 +9,6 @@
 
 /* --------------- 
 
-Header
-
----------------*/
-
-header {
-    position: unset;
-    padding: 1rem 0;
-    background: #eaf4f7;
-}
-
-.nav-flex {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-
-/* --------------- 
-
 FAQ Content
 
 ---------------*/
