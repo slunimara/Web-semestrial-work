@@ -1,2 +1,2 @@
 # KMI WEB
-Marek Brodacký
+My semestrial work for KMI/WEB.
